@@ -12,7 +12,7 @@ body {
 position: absolute; /* Added absolute relative */
 top: -100px; /* Initially hide it off-screen */
 left: 0;
-background-color: #6b2bff; /* Example background color */
+background-color: #5b14ff; /* Example background color */
 color: white;
 padding: 8px;
 z-index: 101; /* Ensure it's on top of nav content */
