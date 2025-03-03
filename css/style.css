@@ -7,6 +7,24 @@ body {
     padding-top: 100px; /* Add padding to body to avoid overlap with the nav bar */
 }
 
+/* Style for the skip link */
+.skip-link {
+  position: absolute;
+  top: -40px; /* Initially hide it off-screen */
+  left: 0;
+  background-color: #007bff; /* Example background color */
+  color: white;
+  padding: 8px;
+  z-index: 100; /* Ensure it's on top of other content */
+  transition: top 0.3s ease-in-out; /* Add a smooth transition */
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0; /* Bring it into view on focus */
+  outline: none; /*Remove default focus outline*/
+}
+
 nav {
     position: fixed;
     top: 0;
