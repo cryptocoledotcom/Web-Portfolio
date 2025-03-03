@@ -3,7 +3,7 @@
 /* --- Base Styles (Mobile) --- */
 
 body {
-    font-family: sans-serif; /* Example - set a default font */
+    font-family: sans-serif; /* set a default font */
     padding-top: 100px; /* Add padding to body to avoid overlap with the nav bar */
 }
 
