@@ -1,0 +1,232 @@
+/* style.css - Mobile-First */
+
+/* --- Base Styles (Mobile) --- */
+
+body {
+    font-family: sans-serif; /* Example - set a default font */
+    padding-top: 100px; /* Add padding to body to avoid overlap with the nav bar */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 100;
+    padding: 10px 0;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* space between logo and links */
+    flex-wrap: wrap; /* Allow content to wrap */
+}
+
+.logo {
+    margin-left: 20px; /*keep left padding */
+}
+
+.logo img {
+    height: 50px;
+}
+
+#home h1 {
+  text-align: center;
+  color:#6b2bff;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#about h1 {
+  text-align: center;
+  color:#6b2bff;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#about img {
+  max-width: 100%;
+  width: 25%;
+  height: auto;
+  margin-bottom: 10px; /*Adjusted */
+  padding: 2px;
+}
+
+#education h1 {
+    text-align: center;
+    color:#6b2bff;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#education a {
+    font-family: "Helvetica";
+    font-size:1.2em;
+    color: #ff0800
+}
+
+#education img {
+    max-width: 100%;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    margin-bottom: 10px; /* Adjusted */
+    padding: 10px;
+}
+#contact h1 {
+    text-align: center;
+    color:#6b2bff;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#contact p {
+    text-align: center;
+    font-family: "Helvetica";
+    font-size:1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /*take up all space */
+}
+
+nav li {
+    display: block; /* Stack vertically on mobile */
+    margin: 10px 0; /* Space between links vertically */
+    text-align: center; /* center the text */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section { /* Adjusted height for mobile */
+    text-align: center;
+    padding: 20px; /* Add padding */
+    scroll-margin-top: 100px; /* Adjust scroll margin */
+}
+
+.Welcome { /* Welcome Section - Mobile-First */
+  font-size: 2.5rem; /* Reduced for mobile */
+  text-align: center;
+  height: auto; /* Adjust to content on mobile */
+  padding: 5px; /* Add some padding */
+  color: #ffffff;
+  background: #000000;
+  font-family: 'Niconne', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #6b2bff, /* Reduced for mobile */
+               4px 4px 0px #ff00dd,
+               6px 6px 0px #2f00ff;
+
+}
+
+p{
+text-align: center;
+font-family: "Helvetica";
+font-size:1.2rem;
+}
+
+#contact a{
+color: #d52e3f;
+text-decoration: underline;
+font-family: 'Niconne', sans-serif;
+font-size: 1.2rem;
+
+}   
+
+#contact img{
+  max-width: 100%;
+  width: 75%;
+  height: auto;
+  margin-bottom: 10px; /*adjusted */
+}
+
+#footer {
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative; /*remove fixed */
+}
+
+.certificate-thumbnail {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-align: center;
+}
+
+.certificate-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.certificate-thumbnail a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Optional: Additional styling for lightbox images */
+.glightbox-clean .gslide-image {
+  border-radius: 5px; /* Example: rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example: add a shadow */
+}
+.goverlay {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* --- Media Query for Larger Screens (e.g., Tablets and Desktops) --- */
+
+@media (min-width: 768px) { /* Typical tablet breakpoint */ 
+  body {
+      padding-top: 100px; /* Adjust padding for larger screens */
+  }
+  nav {
+        justify-content: space-around; /* space around logo and links */
+        flex-wrap: nowrap; /*dont wrap content*/
+    }
+
+    nav ul {
+        width: auto; /*let content fit */
+    }
+    
+    nav li {
+        display: inline; /* Links inline on larger screens */
+        margin: 0 20px; /* Space between links horizontally */
+    }
+
+    section {
+        scroll-margin-top: 100px; /* Adjust scroll margin */
+    }
+
+    .Welcome {
+      font-size: 6rem;
+      text-align: center;
+      height: auto; /* Back to original height */
+      padding: 20px;
+      color:#ffffff;
+      background: #000000;
+      font-family: 'Niconne', sans-serif;
+      font-weight: 700;
+      text-shadow: 2px 2px 0px #6b2bff,
+               4px 4px 0px #ff00dd,
+               6px 6px 0px #2f00ff;
+    }
+  }
