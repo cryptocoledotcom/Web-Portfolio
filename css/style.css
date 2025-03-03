@@ -3,144 +3,149 @@
 /* --- Base Styles (Mobile) --- */
 
 body {
-    font-family: sans-serif; /* set a default font */
-    padding-top: 100px; /* Add padding to body to avoid overlap with the nav bar */
+  font-family: sans-serif; /* set a default font */
+  padding-top: 100px; /* Add padding to body to avoid overlap with the nav bar */
 }
 
 /* Style for the skip link */
 .skip-link {
-  position: absolute;
-  top: -40px; /* Initially hide it off-screen */
-  left: 0;
-  background-color: #007bff; /* Example background color */
-  color: white;
-  padding: 8px;
-  z-index: 100; /* Ensure it's on top of other content */
-  transition: top 0.3s ease-in-out; /* Add a smooth transition */
-  text-decoration: none;
+position: absolute; /* Added absolute relative */
+top: -100px; /* Initially hide it off-screen */
+left: 0;
+background-color: #007bff; /* Example background color */
+color: white;
+padding: 8px;
+z-index: 101; /* Ensure it's on top of nav content */
+transition: top 0.3s ease-in-out; /* Add a smooth transition */
+text-decoration: none;
 }
 
 .skip-link:focus {
-  top: 0; /* Bring it into view on focus */
-  outline: none; /*Remove default focus outline*/
+top: 0px; /* Bring it into view on focus */
+outline: none; /*Remove default focus outline*/
+}
+/* Ensure .Welcome does not create stacking context*/
+.Welcome{
+position: static;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    z-index: 100;
-    padding: 10px 0;
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center items */
-    justify-content: space-between; /* space between logo and links */
-    flex-wrap: wrap; /* Allow content to wrap */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 100; /* Keep the z-index lower than skip-link */
+  padding: 10px 0;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* space between logo and links */
+  flex-wrap: wrap; /* Allow content to wrap */
 }
 
 .logo {
-    margin-left: 20px; /*keep left padding */
+  margin-left: 20px; /*keep left padding */
 }
 
 .logo img {
-    height: 50px;
+  height: 50px;
 }
 
 #home h1 {
-  text-align: center;
-  color:#6b2bff;
-  text-decoration: underline;
-  padding: 10px;
+text-align: center;
+color:#6b2bff;
+text-decoration: underline;
+padding: 10px;
 }
 
 #about h1 {
+text-align: center;
+color:#6b2bff;
+text-decoration: underline;
+padding: 10px;
+}
+
+#about img {
+max-width: 100%;
+width: 25%;
+height: auto;
+margin-bottom: 10px; /*Adjusted */
+padding: 2px;
+}
+
+#education h1 {
   text-align: center;
   color:#6b2bff;
   text-decoration: underline;
   padding: 10px;
 }
 
-#about img {
-  max-width: 100%;
-  width: 25%;
-  height: auto;
-  margin-bottom: 10px; /*Adjusted */
-  padding: 2px;
-}
-
-#education h1 {
-    text-align: center;
-    color:#6b2bff;
-    text-decoration: underline;
-    padding: 10px;
-}
-
 #education a {
-    font-family: "Helvetica";
-    font-size:1.2em;
-    color: #ad0600
+  font-family: "Helvetica";
+  font-size:1.2em;
+  color: #ad0600
 }
 
 #education img {
-    max-width: 100%;
-    align-items: center;
-    width: 75%;
-    height: auto;
-    margin-bottom: 10px;
-    padding: 10px;
+  max-width: 100%;
+  align-items: center;
+  width: 75%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 #contact h1 {
-    text-align: center;
-    color:#6b2bff;
-    text-decoration: underline;
-    padding: 10px;
+  text-align: center;
+  color:#6b2bff;
+  text-decoration: underline;
+  padding: 10px;
 }
 
 #contact p {
-    text-align: center;
-    font-family: "Helvetica";
-    font-size:1.2rem;
+  text-align: center;
+  font-family: "Helvetica";
+  font-size:1.2rem;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%; /*take up all space */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; /*take up all space */
 }
 
 nav li {
-    display: block; /* Stack vertically on mobile */
-    margin: 10px 0; /* Space between links vertically */
-    text-align: center; /* center the text */
+  display: block; /* Stack vertically on mobile */
+  margin: 10px 0; /* Space between links vertically */
+  text-align: center; /* center the text */
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 section { /* height for mobile */
-    text-align: center;
-    padding: 20px; 
-    scroll-margin-top: 100px; /* Adjust scroll margin */
+  text-align: center;
+  padding: 20px; 
+  scroll-margin-top: 100px; /* Adjust scroll margin */
 }
 
 .Welcome { /* Welcome Section - Mobile-First */
-  font-size: 2.5rem; /* mobile */
-  text-align: center;
-  height: auto; /* Adjust to content on mobile */
-  padding: 5px; 
-  color: #ffffff;
-  background: #000000;
-  font-family: 'Niconne', sans-serif;
-  font-weight: 700;
-  text-shadow: 2px 2px 0px #6b2bff, /* Reduced for mobile */
-               4px 4px 0px #ff00dd,
-               6px 6px 0px #2f00ff;
+position: static;
+font-size: 2.5rem; /* mobile */
+text-align: center;
+height: auto; /* Adjust to content on mobile */
+padding: 5px; 
+color: #ffffff;
+background: #000000;
+font-family: 'Niconne', sans-serif;
+font-weight: 700;
+text-shadow: 2px 2px 0px #6b2bff, /* Reduced for mobile */
+             4px 4px 0px #ff00dd,
+             6px 6px 0px #2f00ff;
 
 }
 
@@ -159,52 +164,52 @@ font-size: 1.2rem;
 }   
 
 #contact img{
-  max-width: 100%; 
-  width: 75%; 
-  height: auto; 
-  margin-bottom: 10px;  
+max-width: 100%; 
+width: 75%; 
+height: auto; 
+margin-bottom: 10px;  
 }
 
 #footer {
-    bottom:0; /* Keep footer at the bottom */
-    left:0; /* Keep footer at the bottom */
-    width:100%; /* Full width */
-    height: 50px; /* Set a fixed height */
-    background-color: #333; /* Background color */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
-    padding: 10px 0; /* Padding for footer content */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center items */
-    justify-content: center; /* Center content */
-    flex-wrap: wrap; /* Allow content to wrap */
-    position: relative; /* Keep footer at the bottom */
+  bottom:0; /* Keep footer at the bottom */
+  left:0; /* Keep footer at the bottom */
+  width:100%; /* Full width */
+  height: 50px; /* Set a fixed height */
+  background-color: #333; /* Background color */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+  padding: 10px 0; /* Padding for footer content */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Center content */
+  flex-wrap: wrap; /* Allow content to wrap */
+  position: relative; /* Keep footer at the bottom */
 }
 
 .certificate-thumbnail {
-  width: 200px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  border: 1px solid #ccc; /* Add a border */
-  margin: 10px; /* Add space between images */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow */
-  display: inline-block; /* Display images in a row */
-  text-align: center; /* Center text */
+width: 200px; /* Adjust as needed */
+height: auto; /* Maintain aspect ratio */
+border: 1px solid #ccc; /* Add a border */
+margin: 10px; /* Add space between images */
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow */
+display: inline-block; /* Display images in a row */
+text-align: center; /* Center text */
 }
 
 .certificate-thumbnail img {
-  width: 100%; /* Fill container */
-  height: auto; /* Maintain aspect ratio */
+width: 100%; /* Fill container */
+height: auto; /* Maintain aspect ratio */
 }
 
 .certificate-thumbnail a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Text color */
+text-decoration: none; /* Remove underline */
+color: black; /* Text color */
 }
 
 /* Additional styling for lightbox images */
 .glightbox-clean .gslide-image {
-  border-radius: 5px; /*  rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a shadow */
+border-radius: 5px; /*  rounded corners */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a shadow */
 }
 .goverlay {
 background-color: rgba(0, 0, 0, 0.8);
@@ -213,38 +218,38 @@ background-color: rgba(0, 0, 0, 0.8);
 /* --- Media Query for Larger Screens (e.g., Tablets and Desktops) --- */
 
 @media (min-width: 768px) { /* Typical tablet breakpoint */ 
-  body {
-      padding-top: 100px; /* Adjust padding for larger screens */
+body {
+    padding-top: 100px; /* Adjust padding for larger screens */
+}
+nav {
+      justify-content: space-around; /* space around logo and links */
+      flex-wrap: nowrap; /*dont wrap content*/
   }
-  nav {
-        justify-content: space-around; /* space around logo and links */
-        flex-wrap: nowrap; /*dont wrap content*/
-    }
 
-    nav ul {
-        width: auto; /*let content fit */
-    }
-    
-    nav li {
-        display: inline; /* Links inline on larger screens */
-        margin: 0 20px; /* Space between links horizontally */
-    }
-
-    section {
-        scroll-margin-top: 100px; /* Adjust scroll margin */
-    }
-
-    .Welcome {
-      font-size: 6rem; /* Larger font size */
-      text-align: center; /* Center text */
-      height: auto; /* Back to original height */
-      padding: 20px; /* Add padding */
-      color:#ffffff; /* Text color */
-      background: #000000; /* Background color */
-      font-family: 'Niconne', sans-serif; /* Custom font */
-      font-weight: 700; /* Bold text */
-      text-shadow: 2px 2px 0px #6b2bff, /* Text shadow */
-                   4px 4px 0px #ff00dd, /* Text shadow */
-                   6px 6px 0px #2f00ff; /* Text shadow */
-    }
+  nav ul {
+      width: auto; /*let content fit */
   }
+  
+  nav li {
+      display: inline; /* Links inline on larger screens */
+      margin: 0 20px; /* Space between links horizontally */
+  }
+
+  section {
+      scroll-margin-top: 100px; /* Adjust scroll margin */
+  }
+
+  .Welcome {
+    font-size: 6rem; /* Larger font size */
+    text-align: center; /* Center text */
+    height: auto; /* Back to original height */
+    padding: 20px; /* Add padding */
+    color:#ffffff; /* Text color */
+    background: #000000; /* Background color */
+    font-family: 'Niconne', sans-serif; /* Custom font */
+    font-weight: 700; /* Bold text */
+    text-shadow: 2px 2px 0px #6b2bff, /* Text shadow */
+                 4px 4px 0px #ff00dd, /* Text shadow */
+                 6px 6px 0px #2f00ff; /* Text shadow */
+  }
+}
