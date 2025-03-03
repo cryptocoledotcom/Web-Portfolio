@@ -4,29 +4,31 @@
 
 body { /* Body styling */
   font-family: sans-serif; /* set a default font */
-  padding-top: 100px; /* Add padding to body to avoid overlap with the nav bar */
+  /*padding-top: 100px; Removed padding*/
 }
 
 /* Style for the skip link */
 .skip-link { /* Skip link styling */
-position: absolute; /* Added absolute relative */
-top: -100px; /* Initially hide it off-screen */
-left: 0; /* Align to the left */
-background-color: #5b14ff; /* background color */
-color: white; /* text color */
-padding: 8px; /* Add padding */
-z-index: 101; /* Ensure it's on top of nav content */
-transition: top 0.3s ease-in-out; /* Add a smooth transition */
-text-decoration: none;
+  position: absolute; /* Added absolute relative */
+  top: -100px; /* Initially hide it off-screen */
+  left: 0; /* Align to the left */
+  background-color: #5b14ff; /* background color */
+  color: white; /* text color */
+  padding: 8px; /* Add padding */
+  z-index: 101; /* Ensure it's on top of nav content */
+  transition: top 0.3s ease-in-out; /* Add a smooth transition */
+  text-decoration: none;
 }
 
 .skip-link:focus { /* Bring it into view on focus */
-top: 0px; /* Bring it into view on focus */
-outline: none; /*Remove default focus outline*/
+  top: 0px; /* Bring it into view on focus */
+  outline: none; /*Remove default focus outline*/
 }
+
 /* Ensure .Welcome does not create stacking context*/
-.Welcome{ /* Welcome Section - Mobile-First */
-position: static; /* Adjust position */
+.Welcome { /* Welcome Section - Mobile-First */
+  position: static; /* Adjust position */
+  margin-top: 185px;
 }
 
 nav { /* Navigation bar styling */
@@ -53,38 +55,38 @@ nav { /* Navigation bar styling */
 }
 
 #home h1 { /* Heading styling */
-text-align: center; /* Center text */
-color:#6b2bff; /* Text color */
-text-decoration: underline; /* Underline text */
-padding: 10px; /* Add padding */
+  text-align: center; /* Center text */
+  color: #6b2bff; /* Text color */
+  text-decoration: underline; /* Underline text */
+  padding: 10px; /* Add padding */
 }
 
 #about h1 { /* Heading styling */
-text-align: center; /* Center text */
-color:#6b2bff; /* Text color */
-text-decoration: underline; /* Underline text */
-padding: 10px; /* Add padding */
+  text-align: center; /* Center text */
+  color: #6b2bff; /* Text color */
+  text-decoration: underline; /* Underline text */
+  padding: 10px; /* Add padding */
 }
 
 #about img { /* Image styling */
-max-width: 100%; /* Adjust image max width */
-width: 25%; /* Adjust image width */
-height: auto; /* Maintain aspect ratio */
-margin-bottom: 10px; /*Adjusted */
-padding: 2px; /* Add padding */
+  max-width: 100%; /* Adjust image max width */
+  width: 25%; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /*Adjusted */
+  padding: 2px; /* Add padding */
 }
 
 #education h1 { /* Heading styling */
   text-align: center; /* Center text */
-  color:#6b2bff; /* Text color */
+  color: #6b2bff; /* Text color */
   text-decoration: underline; /* Underline text */
   padding: 10px; /* Add padding */
 }
 
 #education a { /* Link styling */
   font-family: "Helvetica"; /* Set a default font */
-  font-size:1.2em; /* Adjust font size */
-  color: #ad0600 ; /* Text color */
+  font-size: 1.2em; /* Adjust font size */
+  color: #ad0600; /* Text color */
 }
 
 #education img { /* Image styling */
@@ -95,9 +97,10 @@ padding: 2px; /* Add padding */
   margin-bottom: 10px; /* Adjust margin */
   padding: 10px; /* Add padding */
 }
+
 #contact h1 { /* Heading styling */
   text-align: center; /* Center text */
-  color:#6b2bff; /* Text color */
+  color: #6b2bff; /* Text color */
   text-decoration: underline; /* Underline text */
   padding: 10px; /* Add padding */
 }
@@ -105,7 +108,7 @@ padding: 2px; /* Add padding */
 #contact p { /* Paragraph styling */
   text-align: center; /* Center text */
   font-family: "Helvetica"; /* Set a default font */
-  font-size:1.2rem; /* Adjust font size */
+  font-size: 1.2rem; /* Adjust font size */
 }
 
 nav ul { /* Unordered list styling */
@@ -134,46 +137,44 @@ section { /* height for mobile */
 }
 
 .Welcome { /* Welcome Section - Mobile-First */
-position: static; /* Adjust position */
-font-size: 2.5rem; /* mobile */
-text-align: center; /* Center text */
-height: auto; /* Adjust to content on mobile */
-padding: 5px;  /* Add padding */
-color: #ffffff; /* Text color */
-background: #000000; /* Background color */
-font-family: 'Niconne', sans-serif; /* Custom font */
-font-weight: 700; /* Bold text */
-text-shadow: 2px 2px 0px #6b2bff, /* Reduced for mobile */
-             4px 4px 0px #ff00dd, /* Reduced for mobile */
-             6px 6px 0px #2f00ff; /* Reduced for mobile */
-
+  position: static; /* Adjust position */
+  font-size: 2.5rem; /* mobile */
+  text-align: center; /* Center text */
+  height: auto; /* Adjust to content on mobile */
+  padding: 5px; /* Add padding */
+  color: #ffffff; /* Text color */
+  background: #000000; /* Background color */
+  font-family: 'Niconne', sans-serif; /* Custom font */
+  font-weight: 700; /* Bold text */
+  text-shadow: 2px 2px 0px #6b2bff, /* Reduced for mobile */
+      4px 4px 0px #ff00dd, /* Reduced for mobile */
+      6px 6px 0px #2f00ff; /* Reduced for mobile */
 }
 
-p{ /* Paragraph styling */
-text-align: center; /* Center text */
-font-family: "Helvetica"; /* Set a default font */
-font-size:1.2rem; /* Adjust font size */
+p { /* Paragraph styling */
+  text-align: center; /* Center text */
+  font-family: "Helvetica"; /* Set a default font */
+  font-size: 1.2rem; /* Adjust font size */
 }
 
-#contact a{ /* Contact link styling */
-color: #ad0600; /* Text color */
-text-decoration: underline; /* Underline text */
-font-family: 'Niconne', sans-serif; /* Custom font */
-font-size: 1.2rem; /* Adjust font size */
+#contact a { /* Contact link styling */
+  color: #ad0600; /* Text color */
+  text-decoration: underline; /* Underline text */
+  font-family: 'Niconne', sans-serif; /* Custom font */
+  font-size: 1.2rem; /* Adjust font size */
+}
 
-}   
-
-#contact img{ /* Contact image styling */
-max-width: 100%; /* Adjust image max width */
-width: 75%; /* Adjust image width */
-height: auto; /* Maintain aspect ratio */
-margin-bottom: 10px; /* Adjust margin */ 
+#contact img { /* Contact image styling */
+  max-width: 100%; /* Adjust image max width */
+  width: 75%; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Adjust margin */
 }
 
 #footer { /* Footer styling */
-  bottom:0; /* Keep footer at the bottom */
-  left:0; /* Keep footer at the bottom */
-  width:100%; /* Full width */
+  bottom: 0; /* Keep footer at the bottom */
+  left: 0; /* Keep footer at the bottom */
+  width: 100%; /* Full width */
   height: 50px; /* Set a fixed height */
   background-color: #333; /* Background color */
   color: white; /* Text color */
@@ -187,41 +188,76 @@ margin-bottom: 10px; /* Adjust margin */
 }
 
 .certificate-thumbnail { /* Certificate thumbnail styling */
-width: 200px; /* Adjust as needed */
-height: auto; /* Maintain aspect ratio */
-border: 1px solid #ccc; /* Add a border */
-margin: 10px; /* Add space between images */
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow */
-display: inline-block; /* Display images in a row */
-text-align: center; /* Center text */
+  width: 200px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ccc; /* Add a border */
+  margin: 10px; /* Add space between images */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow */
+  display: inline-block; /* Display images in a row */
+  text-align: center; /* Center text */
 }
 
 .certificate-thumbnail img { /* Certificate image styling */
-width: 100%; /* Fill container */
-height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Fill container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .certificate-thumbnail a { /* Certificate link styling */
-text-decoration: none; /* Remove underline */
-color: black; /* Text color */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Text color */
 }
 
 /* Additional styling for lightbox images */
 .glightbox-clean .gslide-image { /* Lightbox image styling */
-border-radius: 5px; /*  rounded corners */
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a shadow */
+  border-radius: 5px; /*  rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a shadow */
 }
+
 .goverlay { /* Lightbox overlay styling */
-background-color: rgba(0, 0, 0, 0.8); /* Add a dark overlay */
+  background-color: rgba(0, 0, 0, 0.8); /* Add a dark overlay */
+}
+
+/* --- Media Query for Tablet Screens --- */
+@media (min-width: 481px) and (max-width: 768px) {
+ 
+  nav {
+      padding: 10px; /* Add padding */
+      justify-content: space-around; /* Distribute space */
+  }
+
+  nav ul {
+      width: auto; /*let content fit */
+      display: flex; /* Display links inline */
+      justify-content: space-around;
+  }
+
+  nav li {
+      display: inline; /* Links inline on tablet */
+      margin: 0 10px; /* Space between links horizontally */
+  }
+
+  .Welcome {
+      font-size: 4rem; /* Mid-size */
+      padding: 10px; /* Add padding */
+      margin-top: 100px;
+  }
+
+  #about img {
+      width: 40%; /* Adjust image width */
+      margin-bottom: 10px; /*Adjusted */
+  }
+
+  #education img {
+      width: 60%; /* Adjust image width */
+      margin-bottom: 10px; /*Adjusted */
+  }
 }
 
 /* --- Media Query for Larger Screens (e.g., Tablets and Desktops) --- */
 
-@media (min-width: 768px) { /* Typical tablet breakpoint */ 
-body {
-    padding-top: 100px; /* Adjust padding for larger screens */
-}
-nav {
+@media (min-width: 769px) { /* Typical tablet breakpoint */
+  /*removed body padding*/
+  nav {
       justify-content: space-around; /* space around logo and links */
       flex-wrap: nowrap; /*dont wrap content*/
   }
@@ -229,7 +265,7 @@ nav {
   nav ul {
       width: auto; /*let content fit */
   }
-  
+
   nav li {
       display: inline; /* Links inline on larger screens */
       margin: 0 20px; /* Space between links horizontally */
@@ -240,16 +276,16 @@ nav {
   }
 
   .Welcome {
-    font-size: 6rem; /* Larger font size */
-    text-align: center; /* Center text */
-    height: auto; /* Back to original height */
-    padding: 20px; /* Add padding */
-    color:#ffffff; /* Text color */
-    background: #000000; /* Background color */
-    font-family: 'Niconne', sans-serif; /* Custom font */
-    font-weight: 700; /* Bold text */
-    text-shadow: 2px 2px 0px #6b2bff, /* Text shadow */
-                 4px 4px 0px #ff00dd, /* Text shadow */
-                 6px 6px 0px #2f00ff; /* Text shadow */
+      font-size: 6rem; /* Larger font size */
+      text-align: center; /* Center text */
+      height: auto; /* Back to original height */
+      padding: 20px; /* Add padding */
+      color: #ffffff; /* Text color */
+      background: #000000; /* Background color */
+      font-family: 'Niconne', sans-serif; /* Custom font */
+      font-weight: 700; /* Bold text */
+      text-shadow: 2px 2px 0px #6b2bff, /* Text shadow */
+          4px 4px 0px #ff00dd, /* Text shadow */
+          6px 6px 0px #2f00ff; /* Text shadow */
   }
 }
