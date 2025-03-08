@@ -54,6 +54,39 @@ nav { /* Navigation bar styling */
   height: 50px; /* Adjust height */
 }
 
+#education p {
+  /* Paragraph styling */
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#education img {
+  /* Logo styling - FIXED SIZE */
+  max-width: 100%; /* set a max width */
+  max-height: 100%; /* set a max height */
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+  object-fit: contain;/*Keep the image from being stretched*/
+}
+#education .logo-container{
+    /*sets max size for image*/
+    width: 50px;
+    height: 50px;
+}
+
+#education a {
+  /* Link styling */
+  font-family: "Helvetica";
+  font-size: 1.2em;
+  color: #ad0600;
+}
+
 #home h1 { /* Heading styling */
   text-align: center; /* Center text */
   color: #6b2bff; /* Text color */
