@@ -1,324 +1,397 @@
-/* style.css - Mobile-First */
 
-/* --- Base Styles (Mobile) --- */
-
-body { /* Body styling */
-  font-family: sans-serif; /* set a default font */
-  /*padding-top: 100px; Removed padding*/
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
-/* Style for the skip link */
-.skip-link { /* Skip link styling */
-  position: absolute; /* Added absolute relative */
-  top: -100px; /* Initially hide it off-screen */
-  left: 0; /* Align to the left */
-  background-color: #5b14ff; /* background color */
-  color: white; /* text color */
-  padding: 8px; /* Add padding */
-  z-index: 101; /* Ensure it's on top of nav content */
-  transition: top 0.3s ease-in-out; /* Add a smooth transition */
+body {
+  font-family: sans-serif;
+  background-color: #000000;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  background-color: #5b14ff;
+  color: white;
+  padding: 8px;
+  z-index: 101;
+  transition: top 0.3s ease-in-out;
   text-decoration: none;
 }
 
-.skip-link:focus { /* Bring it into view on focus */
-  top: 0px; /* Bring it into view on focus */
-  outline: none; /*Remove default focus outline*/
+.skip-link:focus {
+  top: 0px;
+  outline: none;
 }
 
-/* Ensure .Welcome does not create stacking context*/
-.Welcome { /* Welcome Section - Mobile-First */
-  position: static; /* Adjust position */
+.Welcome {
+  position: static;
   margin-top: 185px;
 }
 
-nav { /* Navigation bar styling */
-  position: fixed; /* Keep the nav bar fixed */
-  top: 0; /* Keep the nav bar at the top */
-  left: 0; /* Keep the nav bar at the left */
-  width: 100%; /* Full width */
-  background-color: #333; /* Background color */
-  color: white; /* Text color */
-  z-index: 100; /* Keep the z-index lower than skip-link */
-  padding: 10px 0; /* Padding for nav content */
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Vertically center items */
-  justify-content: space-between; /* space between logo and links */
-  flex-wrap: wrap; /* Allow content to wrap */
-}
-
-.logo { /* Logo styling */
-  margin-left: 20px; /*keep left padding */
-}
-
-.logo img { /* Logo styling */
-  height: 50px; /* Adjust height */
-}
-
-#education p {
-  /* Paragraph styling */
-  margin: 0;
-  text-align: center;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 100;
+  padding: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
+.logo {
+  margin-left: 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+#education p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color:#ffffff
+}
+
 #education img {
-  /* Logo styling - FIXED SIZE */
-  max-width: 100%; /* set a max width */
-  max-height: 100%; /* set a max height */
+  max-width: 100%;
+  max-height: 100%;
   display: inline-block;
   margin: 0 5px;
   vertical-align: middle;
-  object-fit: contain;/*Keep the image from being stretched*/
-}
-#education .logo-container{
-    /*sets max size for image*/
-    width: 50px;
-    height: 50px;
+  object-fit: contain;
+  padding: 10px;
 }
 
 #education a {
-  /* Link styling */
   font-family: "Helvetica";
   font-size: 1.2em;
   color: #ad0600;
 }
 
-#home h1 { /* Heading styling */
-  text-align: center; /* Center text */
-  color: #6b2bff; /* Text color */
-  text-decoration: underline; /* Underline text */
-  padding: 10px; /* Add padding */
+#home h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-#about h1 { /* Heading styling */
-  text-align: center; /* Center text */
-  color: #6b2bff; /* Text color */
-  text-decoration: underline; /* Underline text */
-  padding: 10px; /* Add padding */
+#about h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-#about img { /* Image styling */
-  max-width: 100%; /* Adjust image max width */
-  width: 25%; /* Adjust image width */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /*Adjusted */
-  padding: 2px; /* Add padding */
+#about img {
+  max-width: 100%;
+  width: 25%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 2px;
 }
 
-#education h1 { /* Heading styling */
-  text-align: center; /* Center text */
-  color: #6b2bff; /* Text color */
-  text-decoration: underline; /* Underline text */
-  padding: 10px; /* Add padding */
+#specializations h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-#education a { /* Link styling */
-  font-family: "Helvetica"; /* Set a default font */
-  font-size: 1.2em; /* Adjust font size */
-  color: #ad0600; /* Text color */
+#specializations h2 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-#education img { /* Image styling */
-  max-width: 100%; /* Adjust image max width */
-  align-items: center; /* Center image */
-  width: 75%; /* Adjust image width */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Adjust margin */
-  padding: 10px; /* Add padding */
+#specializations h3 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-#contact h1 { /* Heading styling */
-  text-align: center; /* Center text */
-  color: #6b2bff; /* Text color */
-  text-decoration: underline; /* Underline text */
-  padding: 10px; /* Add padding */
+#certificates h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-#contact p { /* Paragraph styling */
-  text-align: center; /* Center text */
-  font-family: "Helvetica"; /* Set a default font */
-  font-size: 1.2rem; /* Adjust font size */
+#certificates h2 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-nav ul { /* Unordered list styling */
-  list-style: none; /* Remove default list style */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  width: 100%; /*take up all space */
+#certificates h3 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-nav li { /* List item styling */
-  display: block; /* Stack vertically on mobile */
-  margin: 10px 0; /* Space between links vertically */
-  text-align: center; /* center the text */
+#education h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-nav a { /* Link styling */
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Bold text */
+#education a {
+  font-family: "Helvetica";
+  font-size: 1.2em;
+  color: #ff615c;
 }
 
-section { /* height for mobile */
-  text-align: center; /* Center text */
-  padding: 20px; /* Add padding */
-  scroll-margin-top: 100px; /* Adjust scroll margin */
+#education img {
+  max-width: 100%;
+  align-items: center;
+  width: 75%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-.Welcome { /* Welcome Section - Mobile-First */
-  position: static; /* Adjust position */
-  font-size: 2.5rem; /* mobile */
-  text-align: center; /* Center text */
-  height: auto; /* Adjust to content on mobile */
-  padding: 5px; /* Add padding */
-  color: #ffffff; /* Text color */
-  background: #000000; /* Background color */
-  font-family: 'Niconne', sans-serif; /* Custom font */
-  font-weight: 700; /* Bold text */
-  text-shadow: 2px 2px 0px #6b2bff, /* Reduced for mobile */
-      4px 4px 0px #ff00dd, /* Reduced for mobile */
-      6px 6px 0px #2f00ff; /* Reduced for mobile */
+#contact h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
 }
 
-p { /* Paragraph styling */
-  text-align: center; /* Center text */
-  font-family: "Helvetica"; /* Set a default font */
-  font-size: 1.2rem; /* Adjust font size */
+#contact p {
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  color:#ffffff
 }
 
-#contact a { /* Contact link styling */
-  color: #ad0600; /* Text color */
-  text-decoration: underline; /* Underline text */
-  font-family: 'Niconne', sans-serif; /* Custom font */
-  font-size: 1.2rem; /* Adjust font size */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-#contact img { /* Contact image styling */
-  max-width: 100%; /* Adjust image max width */
-  width: 75%; /* Adjust image width */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Adjust margin */
+nav li {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
 }
 
-#footer { /* Footer styling */
-  bottom: 0; /* Keep footer at the bottom */
-  left: 0; /* Keep footer at the bottom */
-  width: 100%; /* Full width */
-  height: 50px; /* Set a fixed height */
-  background-color: #333; /* Background color */
-  color: white; /* Text color */
-  text-align: center; /* Center text */
-  padding: 10px 0; /* Padding for footer content */
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Vertically center items */
-  justify-content: center; /* Center content */
-  flex-wrap: wrap; /* Allow content to wrap */
-  position: relative; /* Keep footer at the bottom */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.certificate-thumbnail { /* Certificate thumbnail styling */
-  width: 200px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  border: 1px solid #ccc; /* Add a border */
-  margin: 10px; /* Add space between images */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow */
-  display: inline-block; /* Display images in a row */
-  text-align: center; /* Center text */
+section {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 70px;
+  scroll-margin-top: 100px;
 }
 
-.certificate-thumbnail img { /* Certificate image styling */
-  width: 100%; /* Fill container */
-  height: auto; /* Maintain aspect ratio */
+.Welcome {
+  position: static;
+  font-size: 2.5rem;
+  text-align: center;
+  height: auto;
+  padding: 5px;
+  color: #ffffff;
+  background: #000000;
+  font-family: 'Niconne', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #6b2bff,
+      4px 4px 0px #ff00dd,
+      6px 6px 0px #2f00ff;
 }
 
-.certificate-thumbnail a { /* Certificate link styling */
-  text-decoration: none; /* Remove underline */
-  color: black; /* Text color */
+p {
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  color:#ffffff
 }
 
-/* Additional styling for lightbox images */
-.glightbox-clean .gslide-image { /* Lightbox image styling */
-  border-radius: 5px; /*  rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a shadow */
+#contact a {
+  color: #FF615C;
+  text-decoration: underline;
+  font-family: 'Niconne', sans-serif;
+  font-size: 1.2rem;
 }
 
-.goverlay { /* Lightbox overlay styling */
-  background-color: rgba(0, 0, 0, 0.8); /* Add a dark overlay */
+#contact img {
+  max-width: 100%;
+  width: 75%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-/* --- Media Query for Tablet Screens --- */
+#footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 100;
+   }
+
+.certificate-thumbnail {
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-align: center;
+}
+
+.certificate-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.specialization-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.certificate-thumbnail a {
+  text-decoration: none;
+  color: black;
+}
+
+.glightbox-clean .gslide-image {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.goverlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 @media (min-width: 481px) and (max-width: 768px) {
  
   nav {
-      padding: 10px; /* Add padding */
-      justify-content: space-around; /* Distribute space */
+      padding: 10px;
+      justify-content: space-around;
   }
 
   nav ul {
-      width: auto; /*let content fit */
-      display: flex; /* Display links inline */
+      width: auto;
+      display: flex;
       justify-content: space-around;
   }
 
   nav li {
-      display: inline; /* Links inline on tablet */
-      margin: 0 10px; /* Space between links horizontally */
+      display: inline;
+      margin: 0 10px;
   }
 
   .Welcome {
-      font-size: 4rem; /* Mid-size */
-      padding: 10px; /* Add padding */
+      font-size: 4rem;
+      padding: 10px;
       margin-top: 100px;
   }
 
   #about img {
-      width: 40%; /* Adjust image width */
-      margin-bottom: 10px; /*Adjusted */
+      width: 30%;
+      margin-bottom: 10px;
   }
 
   #education img {
-      width: 60%; /* Adjust image width */
-      margin-bottom: 10px; /*Adjusted */
+      width: 60%;
+      margin-bottom: 10px;
   }
 }
 
-/* --- Media Query for Larger Screens (e.g., Tablets and Desktops) --- */
+@media (min-width: 769px) {
+  #about h1 {
+    text-align: center;
+    color: #7657FF;
+    text-decoration: underline;
+    padding: 10px;
+  }
+  
+  #about img {
+    max-width: 100%;
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 2px;
+  }
 
-@media (min-width: 769px) { /* Typical tablet breakpoint */
-  /*removed body padding*/
+  #education p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   nav {
-      justify-content: space-around; /* space around logo and links */
-      flex-wrap: nowrap; /*dont wrap content*/
+      justify-content: space-around;
+      flex-wrap: nowrap;
   }
 
   nav ul {
-      width: auto; /*let content fit */
+      width: auto;
   }
 
   nav li {
-      display: inline; /* Links inline on larger screens */
-      margin: 0 20px; /* Space between links horizontally */
+      display: inline;
+      margin: 0 20px;
   }
 
   section {
-      scroll-margin-top: 100px; /* Adjust scroll margin */
+      scroll-margin-top: 100px;
   }
 
   .Welcome {
-      font-size: 6rem; /* Larger font size */
-      text-align: center; /* Center text */
-      height: auto; /* Back to original height */
-      padding: 20px; /* Add padding */
-      color: #ffffff; /* Text color */
-      background: #000000; /* Background color */
-      font-family: 'Niconne', sans-serif; /* Custom font */
-      font-weight: 700; /* Bold text */
-      text-shadow: 2px 2px 0px #6b2bff, /* Text shadow */
-          4px 4px 0px #ff00dd, /* Text shadow */
-          6px 6px 0px #2f00ff; /* Text shadow */
+    font-size: 6rem;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    color: #ffffff;
+    background: #000000;
+    font-family: 'Niconne', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px #6b2bff,
+        4px 4px 0px #ff00dd,
+        6px 6px 0px #2f00ff;
+    margin-top: 80px;
   }
 }
