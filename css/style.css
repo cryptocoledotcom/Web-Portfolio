@@ -13,6 +13,21 @@ body {
 
 main {
   flex-grow: 1;
+    margin-bottom: 100px; /* Prevent overlap with fixed footer */
+}
+
+section h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.intro-paragraph, p {
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 
 .skip-link {
@@ -30,11 +45,6 @@ main {
 .skip-link:focus {
   top: 0px;
   outline: none;
-}
-
-.Welcome {
-  position: static;
-  margin-top: 185px;
 }
 
 nav {
@@ -78,11 +88,25 @@ nav {
   padding: 10px;
 }
 
+#home p {
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  color:#ffffff
+}
+
 #about h1 {
   text-align: center;
   color: #7657FF;
   text-decoration: underline;
   padding: 10px;
+}
+
+#about p {
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  color:#ffffff
 }
 
 #about img {
@@ -197,8 +221,8 @@ section {
   scroll-margin-top: 100px;
 }
 
-.Welcome {
-  position: static;
+/* Hero Text */
+.hero {
   font-size: 2.5rem;
   text-align: center;
   height: auto;
@@ -210,15 +234,8 @@ section {
   text-shadow: 2px 2px 0px #6b2bff,
       4px 4px 0px #ff00dd,
       6px 6px 0px #2f00ff;
+    margin-top: 80px;
 }
-
-p {
-  text-align: center;
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  color:#ffffff
-}
-
 #contact a {
   color: #FF615C;
   text-decoration: underline;
@@ -303,7 +320,7 @@ p {
       margin: 0 10px;
   }
 
-  .Welcome {
+  .hero {
       font-size: 4rem;
       padding: 10px;
       margin-top: 100px;
@@ -364,7 +381,7 @@ p {
       scroll-margin-top: 100px;
   }
 
-  .Welcome {
+  .hero {
     font-size: 6rem;
     text-align: center;
     height: auto;
