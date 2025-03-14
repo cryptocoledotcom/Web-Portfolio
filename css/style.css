@@ -13,7 +13,16 @@ body {
 
 main {
   flex-grow: 1;
-    margin-bottom: 100px; /* Prevent overlap with fixed footer */
+  margin-bottom: 100px;
+}
+
+
+
+section {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 70px;
+  scroll-margin-top: 100px;
 }
 
 section h1 {
@@ -24,12 +33,14 @@ section h1 {
 }
 
 .intro-paragraph, p {
-    text-align: center;
-    font-family: "Helvetica";
-    font-size: 1.2rem;
-    color: #ffffff;
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 5px;
 }
 
+/* Skip Link */
 .skip-link {
   position: fixed;
   top: -100px;
@@ -47,6 +58,7 @@ section h1 {
   outline: none;
 }
 
+/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -60,139 +72,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.logo {
-  margin-left: 20px;
-}
-
-.logo img {
-  height: 50px;
-}
-
-#education p {
-  margin: 0;
-  text-align: center;
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  color:#ffffff
-}
-
-#home h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#home p {
-  text-align: center;
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  color:#ffffff
-}
-
-#about h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#about p {
-  text-align: center;
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  color:#ffffff
-}
-
-#about img {
-  max-width: 100%;
-  width: 25%;
-  height: auto;
-  margin-bottom: 10px;
-  padding: 2px;
-}
-
-#specializations h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#specializations h2 {
-  text-align: center;
-  color: #ff00dd;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#specializations h3 {
-  text-align: center;
-  color: #ff00dd;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#certificates h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#certificates h2 {
-  text-align: center;
-  color: #ff00dd;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#certificates h3 {
-  text-align: center;
-  color: #ff00dd;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#education h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#education a {
-  font-family: "Helvetica";
-  font-size: 1.2em;
-  color: #ff615c;
-}
-
-#education img {
-  max-width: 100%;
-  align-items: center;
-  width: 75%;
-  height: auto;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-#contact h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
-}
-
-#contact p {
-  text-align: center;
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  color:#ffffff
 }
 
 nav ul {
@@ -214,11 +93,18 @@ nav a {
   font-weight: bold;
 }
 
-section {
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 70px;
-  scroll-margin-top: 100px;
+.logo-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Hero Text */
@@ -236,30 +122,152 @@ section {
       6px 6px 0px #2f00ff;
     margin-top: 80px;
 }
-#contact a {
-  color: #FF615C;
+
+/* home Section */
+#home h1 {
+  text-align: center;
+  color: #7657FF;
   text-decoration: underline;
-  font-family: 'Niconne', sans-serif;
+  padding: 10px;
+}
+
+#home p {
+  text-align: center;
+  font-family: "Helvetica";
   font-size: 1.2rem;
+  color:#ffffff
 }
 
-#contact img {
+#home img {
   max-width: 100%;
-  width: 75%;
+  width: 80%;
   height: auto;
-  margin-bottom: 10px;
+  margin: 10px auto; 
+  display: block; 
+  padding: 2px;
 }
 
-#footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      z-index: 100;
-   }
+/* About Section */
+#about h1 {
+  text-align: center;
+  color: #7657ff;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#about p {
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#about img {
+  max-width: 100%;
+  width: 25%; 
+  height: auto;
+  margin: 10px auto; 
+  display: inline-block; 
+  padding: 2px;
+}
+
+/* Education Section */
+#education h1 {
+  text-align: center;
+  color: #7657ff;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#education .education-text {
+  width: 100%;
+  display: block;
+}
+
+#education p {
+  margin: 5px auto;
+  text-align: center;
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+#education a {
+  font-family: "Helvetica";
+  font-size: 1.2em;
+  color: #ff615c;
+}
+
+#education .first-education-image {
+  max-width: 100%;
+  width: 90%; 
+  height: auto;
+  margin: 10px auto; 
+  display: block;
+  padding: 2px;
+}
+
+#education .second-education-image {
+  max-width: 100%;
+  width: 90%; 
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+}
+
+/* Specializations */
+#specializations h1 {
+  text-align: center;
+  color: #7657FF;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#specializations h2 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#specializations h3 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.specialization-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Certificates */
+#certificates h1 {
+  text-align: center;
+  color: #7657ff;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#certificates h2 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#certificates h3 {
+  text-align: center;
+  color: #ff00dd;
+  text-decoration: underline;
+  padding: 10px;
+}
 
 .certificate-thumbnail {
   width: 200px;
@@ -271,13 +279,7 @@ section {
   text-align: center;
 }
 
-.certificate-grid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.specialization-grid{
+.certificate-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -293,6 +295,49 @@ section {
   color: black;
 }
 
+/* Contact Section */
+#contact h1 {
+  text-align: center;
+  color: #7657ff;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+#contact p {
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#contact a {
+  color: #ff615c;
+  text-decoration: underline;
+  font-family: "Niconne", sans-serif;
+  font-size: 1.2rem;
+}
+
+#contact img {
+  max-width: 100%;
+  width: 80%; 
+  height: auto;
+  margin: 10px auto; 
+  display: block;
+}
+
+/* Footer */
+#footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 100;
+   }
+
+
 .glightbox-clean .gslide-image {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -302,55 +347,68 @@ section {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Tablet Media Queries */
 @media (min-width: 481px) and (max-width: 768px) {
- 
   nav {
-      padding: 10px;
-      justify-content: space-around;
+    padding: 10px;
+    justify-content: space-around;
   }
 
   nav ul {
-      width: auto;
-      display: flex;
-      justify-content: space-around;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
   nav li {
-      display: inline;
-      margin: 0 10px;
+    display: inline;
+    margin: 0 10px;
   }
 
   .hero {
-      font-size: 4rem;
-      padding: 10px;
-      margin-top: 100px;
+    font-size: 4rem;
+    padding: 10px;
+    margin-top: 100px;
   }
 
   #about img {
-      width: 30%;
-      margin-bottom: 10px;
+    width: 30%;
+    margin: 10px auto; 
   }
 
-  #education img {
-      width: 60%;
-      margin-bottom: 10px;
+  #home img {
+    width: 50%; 
+  }
+
+  #education .first-education-image {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  #education .second-education-image {
+    width: 60%;
+    margin-bottom: 10px;
   }
 }
 
+/* Desktop Media Queries */
 @media (min-width: 769px) {
   #about h1 {
     text-align: center;
-    color: #7657FF;
+    color: #7657ff;
     text-decoration: underline;
     padding: 10px;
   }
-  
+
   #about img {
-    max-width: 100%;
+    max-width: 30%;
     width: 150px;
     height: 200px;
     margin-bottom: 10px;
     padding: 2px;
+  }
+  #home img {
+    width: 75%;
   }
 
   #education p {
@@ -362,23 +420,41 @@ section {
     justify-content: center;
     flex-wrap: wrap;
   }
+  #education .education-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #education .first-education-image {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+
+  #education .second-education-image {
+    width: 35%;
+    margin-bottom: 10px;
+  }
 
   nav {
-      justify-content: space-around;
-      flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-wrap: nowrap;
   }
 
   nav ul {
-      width: auto;
+    width: auto;
   }
 
   nav li {
-      display: inline;
-      margin: 0 20px;
+    display: inline;
+    margin: 0 20px;
   }
 
   section {
-      scroll-margin-top: 100px;
+    scroll-margin-top: 100px;
   }
 
   .hero {
@@ -388,11 +464,9 @@ section {
     padding: 20px;
     color: #ffffff;
     background: #000000;
-    font-family: 'Niconne', sans-serif;
+    font-family: "Niconne", sans-serif;
     font-weight: 700;
-    text-shadow: 2px 2px 0px #6b2bff,
-        4px 4px 0px #ff00dd,
-        6px 6px 0px #2f00ff;
+    text-shadow: 2px 2px 0px #6b2bff, 4px 4px 0px #ff00dd, 6px 6px 0px #2f00ff;
     margin-top: 80px;
   }
 }
