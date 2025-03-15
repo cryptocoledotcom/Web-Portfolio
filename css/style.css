@@ -107,6 +107,49 @@ nav a {
   object-fit: contain;
 }
 
+/* Center Login Form - Only on login.html */
+.login-page {
+  display: flex; /* Use flexbox on the body */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Make body take up full viewport height */
+  margin: 0; /* Remove default body margins */
+}
+
+.login-page #main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  flex-grow: 1; /* Allow main-content to take up available space */
+}
+
+#login-form-container,
+#login-success-container {
+  text-align: center; /* Center text inside the containers */
+  padding: 20px;
+  border: 1px solid #ccc; /* Add a border for visual separation (optional) */
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 300px;
+}
+
+/*optional. if you want to change the styling of the message*/
+#login-success-container h1 {
+  color: #0aff02; /* Set the text color to black or your desired color */
+  font-family: sans-serif; /*reset the font-family from intro-paragraph*/
+  font-size: 2rem; /*reset the font-size from intro-paragraph*/
+  text-align: center; /*reset the text-align from intro-paragraph*/
+  margin: 0; /*reset the margin from intro-paragraph*/
+}
+
+#login-success-container p {
+  color: #000000; /* Set the text color to black or your desired color */
+  font-family: sans-serif; /*reset the font-family from intro-paragraph*/
+  font-size: 1rem; /*reset the font-size from intro-paragraph*/
+  text-align: center; /*reset the text-align from intro-paragraph*/
+  margin: 0; /*reset the margin from intro-paragraph*/
+}
+
 /* Hero Text */
 .hero {
   font-size: 2.5rem;
