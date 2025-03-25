@@ -45,3 +45,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedElements = document.querySelectorAll('.animate__animated');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const animationClass = entry.target.dataset.animation;
+                entry.target.classList.add(animationClass);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+});

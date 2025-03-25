@@ -16,20 +16,12 @@ main {
   margin-bottom: 100px;
 }
 
-
-
+/* Global Styles */
 section {
   text-align: center;
   padding: 20px;
   padding-bottom: 70px;
   scroll-margin-top: 100px;
-}
-
-section h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
 }
 
 .intro-paragraph, p {
