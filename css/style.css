@@ -274,14 +274,14 @@ nav a {
 #specializations h2 {
   text-align: center;
   color: #ff00dd;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 10px;
 }
 
 #specializations h3 {
   text-align: center;
   color: #ff00dd;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 10px;
 }
 
@@ -303,7 +303,7 @@ nav a {
 #certificates h2 {
   text-align: center;
   color: #ff00dd;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 10px;
 }
 
