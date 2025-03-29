@@ -67,7 +67,7 @@ nav {
   background-color: #333;
   color: white;
   z-index: 100;
-  padding: 10px 0;
+  padding: 10px; /* Adjusted padding */
   display: flex;
   align-items: center;
   justify-content: space-around; /* Distribute space around items */
@@ -79,23 +79,24 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex; /* Make the list a flex container */
-  flex-direction: column; /* Stack items vertically by default */
-  align-items: center; /* Center items horizontally */
-  width: 100%; /* Take up full width */
+  flex-direction: row; /* Display items horizontally */
+  justify-content: space-around;
+  width: auto; /* Reset width for mobile */
 }
 
 nav li {
+  display: inline; /* Display items inline */
+  margin: 0 10px; /* Add horizontal spacing */
+  width: auto; /* Reset width for mobile */
   text-align: center;
-  margin: 5px 0; /* Add vertical spacing between items */
-  width: 100%; /* Make each item take full width */
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  display: block; /* Make links block-level */
-  padding: 5px 0; /* Add padding to links */
+  display: inline; /* Display links inline */
+  padding: 0; /* Remove padding */
 }
 
 .logo-container {
@@ -168,7 +169,7 @@ nav a {
   text-shadow: 2px 2px 0px #6b2bff,
     4px 4px 0px #ff00dd,
     6px 6px 0px #2f00ff;
-  margin-top: 150px; /* Increased margin to accommodate the nav bar */
+  margin-top: 100px; /* Adjusted margin to accommodate the nav bar */
 }
 
 /* home Section */
@@ -415,28 +416,6 @@ nav a {
     font-size: 3rem;
   }
 
-  nav {
-    padding: 10px;
-    justify-content: space-around;
-  }
-
-  nav ul {
-    width: auto; /* Reset width for tablet */
-    flex-direction: row; /* Display items horizontally */
-    justify-content: space-around;
-  }
-
-  nav li {
-    display: inline; /* Display items inline */
-    margin: 0 10px; /* Add horizontal spacing */
-    width: auto; /* Reset width for tablet */
-  }
-
-  nav a {
-    display: inline; /* Display links inline */
-    padding: 0; /* Remove padding */
-  }
-
   .hero {
     font-size: 4rem;
     padding: 10px;
@@ -522,27 +501,6 @@ nav a {
   nav {
     justify-content: space-around;
     flex-wrap: nowrap; /* Prevent wrapping on desktop */
-  }
-
-  nav ul {
-    width: auto; /* Reset width for desktop */
-    flex-direction: row; /* Display items horizontally */
-    justify-content: space-around;
-  }
-
-  nav li {
-    display: inline; /* Display items inline */
-    margin: 0 20px; /* Add horizontal spacing */
-    width: auto; /* Reset width for desktop */
-  }
-
-  nav a {
-    display: inline; /* Display links inline */
-    padding: 0; /* Remove padding */
-  }
-
-  section {
-    scroll-margin-top: 100px;
   }
 
   .hero {
