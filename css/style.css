@@ -160,7 +160,7 @@ nav a {
   text-shadow: 2px 2px 0px #6b2bff,
       4px 4px 0px #ff00dd,
       6px 6px 0px #2f00ff;
-    margin-top: 80px;
+    margin-top: 250px;
 }
 
 /* home Section */
@@ -393,6 +393,61 @@ nav a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 480px) {
+  /* Navigation Bar */
+  nav {
+    padding: 10px; /* Reduced padding */
+    flex-direction: column; /* Stack logo and list vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+  }
+
+  nav ul {
+    width: 100%; /* Take up full width */
+    display: flex;
+    flex-direction: column; /* Stack list items vertically */
+    align-items: center; /* Center list items horizontally */
+  }
+
+  nav li {
+    display: block; /* Ensure each item is on a new line */
+    margin: 5px 0; /* Add vertical spacing between items */
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+
+  .logo-container {
+    margin-bottom: 10px; /* Add space below the logo */
+  }
+
+  /* Hero Text */
+  .hero {
+    margin-top: 150px; /* Increased margin to accommodate the nav bar */
+    font-size: 2rem; /* Reduced font size for mobile */
+  }
+  /* Home Section */
+  #home img {
+    width: 90%;
+  }
+  /* About Section */
+  #about img {
+    width: 90%;
+  }
+  /* Education Section */
+  #education .first-education-image {
+    width: 90%;
+  }
+  #education .second-education-image {
+    width: 90%;
+  }
+  /* Contact Section */
+  #contact img {
+    width: 90%;
+  }
+}
 /* Tablet Media Queries */
 @media (min-width: 481px) and (max-width: 768px) {
   section h1.animate__animated {
