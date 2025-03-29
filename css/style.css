@@ -284,6 +284,14 @@
      text-decoration: none;
      color: black;
    }
+
+   /* ==========================================================================
+   Specializations and Certificates Section Specific Styles
+   ========================================================================== */
+#specializations .certificate-thumbnail p,
+#certificates .certificate-thumbnail p {
+  color: white;
+}
    
    #contact a {
      color: #ff615c;
