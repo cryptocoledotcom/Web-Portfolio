@@ -24,6 +24,11 @@ section {
   scroll-margin-top: 100px;
 }
 
+/* Increase the size of animated h1 elements */
+section h1.animate__animated {
+  font-size: 2.5rem; /* Increased from default browser size */
+}
+
 .intro-paragraph, p {
   text-align: center;
   font-family: "Helvetica";
@@ -164,6 +169,7 @@ nav a {
   color: #7657FF;
   text-decoration: underline;
   padding: 10px;
+  font-size: 2.5rem;
 }
 
 #home p {
@@ -188,6 +194,7 @@ nav a {
   color: #7657ff;
   text-decoration: underline;
   padding: 10px;
+  font-size: 2.5rem;
 }
 
 #about p {
@@ -212,6 +219,7 @@ nav a {
   color: #7657ff;
   text-decoration: underline;
   padding: 10px;
+  font-size: 2.5rem;
 }
 
 #education .education-text {
@@ -260,6 +268,7 @@ nav a {
   color: #7657FF;
   text-decoration: underline;
   padding: 10px;
+  font-size: 2.5rem;
 }
 
 #specializations h2 {
@@ -288,6 +297,7 @@ nav a {
   color: #7657ff;
   text-decoration: underline;
   padding: 10px;
+  font-seze: 2.5rem;
 }
 
 #certificates h2 {
@@ -336,6 +346,7 @@ nav a {
   color: #7657ff;
   text-decoration: underline;
   padding: 10px;
+  font-size: 2.5rem;
 }
 
 #contact p {
@@ -384,6 +395,28 @@ nav a {
 
 /* Tablet Media Queries */
 @media (min-width: 481px) and (max-width: 768px) {
+  section h1.animate__animated {
+    font-size: 3rem; /* Increased for tablet view */
+  }
+  #home h1 {
+    font-size: 3rem;
+  }
+  #about h1 {
+    font-size: 3rem;
+  }
+  #education h1 {
+    font-size: 3rem;
+  }
+  #specializations h1 {
+    font-size: 3rem;
+  }
+  #certificates h1 {
+    font-size: 3rem;
+  }
+  #contact h1 {
+    font-size: 3rem;
+  }
+  
   nav {
     padding: 10px;
     justify-content: space-around;
@@ -428,13 +461,28 @@ nav a {
 
 /* Desktop Media Queries */
 @media (min-width: 769px) {
+  section h1.animate__animated {
+    font-size: 3.5rem; /* Increased for desktop view */
+  }
+  #home h1 {
+    font-size: 3.5rem;
+  }
+  #specializations h1 {
+    font-size: 3.5rem;
+  }
+  #certificates h1 {
+    font-size: 3.5rem;
+  }
+  #contact h1 {
+    font-size: 3.5rem;
+  }
   #about h1 {
     text-align: center;
     color: #7657ff;
     text-decoration: underline;
     padding: 10px;
+    font-size: 3.5rem;
   }
-
   #about img {
     max-width: 30%;
     width: 150px;
@@ -445,7 +493,9 @@ nav a {
   #home img {
     width: 75%;
   }
-
+  #education h1 {
+    font-size: 3.5rem;
+  }
   #education p {
     margin: 0;
     text-align: center;
