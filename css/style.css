@@ -1,5 +1,7 @@
+/* style.css */
 
-html, body {
+html,
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -29,7 +31,8 @@ section h1.animate__animated {
   font-size: 2.5rem; /* Increased from default browser size */
 }
 
-.intro-paragraph, p {
+.intro-paragraph,
+p {
   text-align: center;
   font-family: "Helvetica";
   font-size: 1.2rem;
@@ -67,27 +70,32 @@ nav {
   padding: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around; /* Distribute space around items */
+  flex-wrap: wrap; /* Allow items to wrap */
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
+  display: flex; /* Make the list a flex container */
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Take up full width */
 }
 
 nav li {
-  display: block;
-  margin: 10px 0;
   text-align: center;
+  margin: 5px 0; /* Add vertical spacing between items */
+  width: 100%; /* Make each item take full width */
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  display: block; /* Make links block-level */
+  padding: 5px 0; /* Add padding to links */
 }
 
 .logo-container {
@@ -158,9 +166,9 @@ nav a {
   font-family: 'Niconne', sans-serif;
   font-weight: 700;
   text-shadow: 2px 2px 0px #6b2bff,
-      4px 4px 0px #ff00dd,
-      6px 6px 0px #2f00ff;
-    margin-top: 250px;
+    4px 4px 0px #ff00dd,
+    6px 6px 0px #2f00ff;
+  margin-top: 150px; /* Increased margin to accommodate the nav bar */
 }
 
 /* home Section */
@@ -176,15 +184,15 @@ nav a {
   text-align: center;
   font-family: "Helvetica";
   font-size: 1.2rem;
-  color:#ffffff
+  color: #ffffff;
 }
 
 #home img {
   max-width: 90%;
   width: 80%;
   height: auto;
-  margin: 10px auto; 
-  display: block; 
+  margin: 10px auto;
+  display: block;
   padding: 2px;
 }
 
@@ -206,10 +214,10 @@ nav a {
 
 #about img {
   max-width: 90%;
-  width: 25%; 
+  width: 25%;
   height: auto;
-  margin: 10px auto; 
-  display: inline-block; 
+  margin: 10px auto;
+  display: inline-block;
   padding: 2px;
 }
 
@@ -246,16 +254,16 @@ nav a {
 
 #education .first-education-image {
   max-width: 90%;
-  width: 90%; 
+  width: 90%;
   height: auto;
-  margin: 10px auto; 
+  margin: 10px auto;
   display: block;
   padding: 2px;
 }
 
 #education .second-education-image {
   max-width: 90%;
-  width: 90%; 
+  width: 90%;
   height: auto;
   margin: 10px auto;
   display: block;
@@ -285,7 +293,7 @@ nav a {
   padding: 10px;
 }
 
-.specialization-grid{
+.specialization-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -365,24 +373,23 @@ nav a {
 
 #contact img {
   max-width: 90%;
-  width: 80%; 
+  width: 80%;
   height: auto;
-  margin: 10px auto; 
+  margin: 10px auto;
   display: block;
 }
 
 /* Footer */
 #footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      z-index: 100;
-   }
-
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 100;
+}
 
 .glightbox-clean .gslide-image {
   border-radius: 5px;
@@ -393,93 +400,41 @@ nav a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Mobile Media Queries (adjust as needed) */
-@media (max-width: 480px) {
-  /* Navigation Bar */
-  nav {
-    flex-direction: column; /* Stack logo and list vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 10px; /* Reduced padding */
-  }
-
-  nav ul {
-    width: 100%; /* Take up full width */
-    flex-direction: column; /* Stack list items vertically */
-    align-items: center; /* Center list items horizontally */
-  }
-
-  nav li {
-    text-align: center; /* Center the text */
-    margin: 5px 0; /* Add vertical spacing between items */
-  }
-
-  .logo-container {
-    margin-bottom: 10px; /* Add space below the logo */
-  }
-
-  /* Hero Text */
-  .hero {
-    margin-top: 150px; /* Increased margin to accommodate the nav bar */
-    font-size: 2rem; /* Reduced font size for mobile */
-  }
-  /* Home Section */
-  #home img {
-    width: 90%;
-  }
-  /* About Section */
-  #about img {
-    width: 90%;
-  }
-  /* Education Section */
-  #education .first-education-image {
-    width: 90%;
-  }
-  #education .second-education-image {
-    width: 90%;
-  }
-  /* Contact Section */
-  #contact img {
-    width: 90%;
-  }
-}
 /* Tablet Media Queries */
 @media (min-width: 481px) and (max-width: 768px) {
   section h1.animate__animated {
     font-size: 3rem; /* Increased for tablet view */
   }
-  #home h1 {
-    font-size: 3rem;
-  }
-  #about h1 {
-    font-size: 3rem;
-  }
-  #education h1 {
-    font-size: 3rem;
-  }
-  #specializations h1 {
-    font-size: 3rem;
-  }
-  #certificates h1 {
-    font-size: 3rem;
-  }
+
+  #home h1,
+  #about h1,
+  #education h1,
+  #specializations h1,
+  #certificates h1,
   #contact h1 {
     font-size: 3rem;
   }
-  
+
   nav {
     padding: 10px;
     justify-content: space-around;
   }
 
   nav ul {
-    width: auto;
-    display: flex;
+    width: auto; /* Reset width for tablet */
+    flex-direction: row; /* Display items horizontally */
     justify-content: space-around;
   }
 
   nav li {
-    display: inline;
-    margin: 0 10px;
+    display: inline; /* Display items inline */
+    margin: 0 10px; /* Add horizontal spacing */
+    width: auto; /* Reset width for tablet */
+  }
+
+  nav a {
+    display: inline; /* Display links inline */
+    padding: 0; /* Remove padding */
   }
 
   .hero {
@@ -490,11 +445,11 @@ nav a {
 
   #about img {
     width: 30%;
-    margin: 10px auto; 
+    margin: 10px auto;
   }
 
   #home img {
-    width: 50%; 
+    width: 50%;
   }
 
   #education .first-education-image {
@@ -513,25 +468,16 @@ nav a {
   section h1.animate__animated {
     font-size: 3.5rem; /* Increased for desktop view */
   }
-  #home h1 {
-    font-size: 3.5rem;
-  }
-  #specializations h1 {
-    font-size: 3.5rem;
-  }
-  #certificates h1 {
-    font-size: 3.5rem;
-  }
+
+  #home h1,
+  #about h1,
+  #education h1,
+  #specializations h1,
+  #certificates h1,
   #contact h1 {
     font-size: 3.5rem;
   }
-  #about h1 {
-    text-align: center;
-    color: #7657ff;
-    text-decoration: underline;
-    padding: 10px;
-    font-size: 3.5rem;
-  }
+
   #about img {
     max-width: 30%;
     width: 150px;
@@ -539,12 +485,11 @@ nav a {
     margin-bottom: 10px;
     padding: 2px;
   }
+
   #home img {
     width: 75%;
   }
-  #education h1 {
-    font-size: 3.5rem;
-  }
+
   #education p {
     margin: 0;
     text-align: center;
@@ -554,6 +499,7 @@ nav a {
     justify-content: center;
     flex-wrap: wrap;
   }
+
   #education .education-text {
     width: 80%;
     display: flex;
@@ -575,16 +521,24 @@ nav a {
 
   nav {
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Prevent wrapping on desktop */
   }
 
   nav ul {
-    width: auto;
+    width: auto; /* Reset width for desktop */
+    flex-direction: row; /* Display items horizontally */
+    justify-content: space-around;
   }
 
   nav li {
-    display: inline;
-    margin: 0 20px;
+    display: inline; /* Display items inline */
+    margin: 0 20px; /* Add horizontal spacing */
+    width: auto; /* Reset width for desktop */
+  }
+
+  nav a {
+    display: inline; /* Display links inline */
+    padding: 0; /* Remove padding */
   }
 
   section {
