@@ -77,13 +77,14 @@ nav ul {
   padding: 0;
   display: flex;
   flex-direction: row; /* Horizontal layout */
-  justify-content: space-around;
-  width: auto; /* Reset width */
+  justify-content: center; /* Center items */
+  flex-wrap: wrap; /* Allow items to wrap */
+  width: 100%; /* Take up full width */
 }
 
 nav li {
   display: inline;
-  margin: 0 10px;
+  margin: 5px; /* Adjusted margin */
   width: auto; /* Reset width */
   text-align: center;
 }
@@ -92,8 +93,8 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  display: inline;
-  padding: 0;
+  display: inline-block; /* Make links inline-block */
+  padding: 5px; /* Added padding */
 }
 
 .logo-container {
@@ -164,7 +165,7 @@ nav a {
   font-family: 'Niconne', sans-serif;
   font-weight: 700;
   text-shadow: 2px 2px 0px #6b2bff, 4px 4px 0px #ff00dd, 6px 6px 0px #2f00ff;
-  margin-top: 100px;
+  margin-top: 150px;
   background: #000000;
 }
 
@@ -309,7 +310,7 @@ nav a {
   .hero {
     font-size: 4rem;
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   #about img {
@@ -395,6 +396,6 @@ nav a {
   .hero {
     font-size: 6rem;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 150px;
   }
 }
