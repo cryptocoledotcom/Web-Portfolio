@@ -180,7 +180,7 @@ nav a {
 }
 
 #home img {
-  max-width: 100%;
+  max-width: 90%;
   width: 80%;
   height: auto;
   margin: 10px auto; 
@@ -205,7 +205,7 @@ nav a {
 }
 
 #about img {
-  max-width: 100%;
+  max-width: 90%;
   width: 25%; 
   height: auto;
   margin: 10px auto; 
@@ -245,7 +245,7 @@ nav a {
 }
 
 #education .first-education-image {
-  max-width: 100%;
+  max-width: 90%;
   width: 90%; 
   height: auto;
   margin: 10px auto; 
@@ -254,7 +254,7 @@ nav a {
 }
 
 #education .second-education-image {
-  max-width: 100%;
+  max-width: 90%;
   width: 90%; 
   height: auto;
   margin: 10px auto;
@@ -364,7 +364,7 @@ nav a {
 }
 
 #contact img {
-  max-width: 100%;
+  max-width: 90%;
   width: 80%; 
   height: auto;
   margin: 10px auto; 
@@ -393,30 +393,24 @@ nav a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Mobile Media Queries (adjust as needed) */
 @media (max-width: 480px) {
   /* Navigation Bar */
   nav {
-    padding: 10px; /* Reduced padding */
     flex-direction: column; /* Stack logo and list vertically */
     align-items: center; /* Center items horizontally */
-    justify-content: center;
+    padding: 10px; /* Reduced padding */
   }
 
   nav ul {
     width: 100%; /* Take up full width */
-    display: flex;
     flex-direction: column; /* Stack list items vertically */
     align-items: center; /* Center list items horizontally */
   }
 
   nav li {
-    display: block; /* Ensure each item is on a new line */
+    text-align: center; /* Center the text */
     margin: 5px 0; /* Add vertical spacing between items */
-    text-align: center;
-  }
-
-  nav a {
-    font-size: 1rem; /* Adjust font size for mobile */
   }
 
   .logo-container {
