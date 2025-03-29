@@ -1,16 +1,15 @@
 /* style.css */
 
+/* General Styles */
 html,
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-}
-
-body {
   font-family: sans-serif;
   background-color: #000000;
+  color: #ffffff; /* Set default text color to white */
 }
 
 main {
@@ -18,7 +17,6 @@ main {
   margin-bottom: 100px;
 }
 
-/* Global Styles */
 section {
   text-align: center;
   padding: 20px;
@@ -26,9 +24,9 @@ section {
   scroll-margin-top: 100px;
 }
 
-/* Increase the size of animated h1 elements */
-section h1.animate__animated {
-  font-size: 2.5rem; /* Increased from default browser size */
+/* Typography */
+h1.animate__animated {
+  font-size: 2.5rem;
 }
 
 .intro-paragraph,
@@ -36,7 +34,6 @@ p {
   text-align: center;
   font-family: "Helvetica";
   font-size: 1.2rem;
-  color: #ffffff;
   margin: 5px;
 }
 
@@ -67,10 +64,10 @@ nav {
   background-color: #333;
   color: white;
   z-index: 100;
-  padding: 10px; /* Adjusted padding */
+  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Distribute space around items */
+  justify-content: space-around;
   flex-wrap: wrap; /* Allow items to wrap */
 }
 
@@ -78,16 +75,16 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Make the list a flex container */
-  flex-direction: row; /* Display items horizontally */
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
   justify-content: space-around;
-  width: auto; /* Reset width for mobile */
+  width: auto; /* Reset width */
 }
 
 nav li {
-  display: inline; /* Display items inline */
-  margin: 0 10px; /* Add horizontal spacing */
-  width: auto; /* Reset width for mobile */
+  display: inline;
+  margin: 0 10px;
+  width: auto; /* Reset width */
   text-align: center;
 }
 
@@ -95,8 +92,8 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  display: inline; /* Display links inline */
-  padding: 0; /* Remove padding */
+  display: inline;
+  padding: 0;
 }
 
 .logo-container {
@@ -113,47 +110,49 @@ nav a {
   object-fit: contain;
 }
 
-/* Center Login Form - Only on login.html */
+/* Login Page */
 .login-page {
-  display: flex; /* Use flexbox on the body */
-  flex-direction: column; /* Stack children vertically */
-  min-height: 100vh; /* Make body take up full viewport height */
-  margin: 0; /* Remove default body margins */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
 }
 
 .login-page #main-content {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  flex-grow: 1; /* Allow main-content to take up available space */
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 #login-form-container,
 #login-success-container {
-  text-align: center; /* Center text inside the containers */
+  text-align: center;
   padding: 20px;
-  border: 1px solid #ccc; /* Add a border for visual separation (optional) */
+  border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
   width: 300px;
+  color: #000000; /* Set text color to black */
 }
 
-/*optional. if you want to change the styling of the message*/
 #login-success-container h1 {
-  color: #0aff02; /* Set the text color to black or your desired color */
-  font-family: sans-serif; /*reset the font-family from intro-paragraph*/
-  font-size: 2rem; /*reset the font-size from intro-paragraph*/
-  text-align: center; /*reset the text-align from intro-paragraph*/
-  margin: 0; /*reset the margin from intro-paragraph*/
+  color: #0aff02;
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
 }
 
 #login-success-container p {
-  color: #000000; /* Set the text color to black or your desired color */
-  font-family: sans-serif; /*reset the font-family from intro-paragraph*/
-  font-size: 1rem; /*reset the font-size from intro-paragraph*/
-  text-align: center; /*reset the text-align from intro-paragraph*/
-  margin: 0; /*reset the margin from intro-paragraph*/
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
 }
 
 /* Hero Text */
@@ -162,33 +161,32 @@ nav a {
   text-align: center;
   height: auto;
   padding: 5px;
-  color: #ffffff;
-  background: #000000;
   font-family: 'Niconne', sans-serif;
   font-weight: 700;
-  text-shadow: 2px 2px 0px #6b2bff,
-    4px 4px 0px #ff00dd,
-    6px 6px 0px #2f00ff;
-  margin-top: 100px; /* Adjusted margin to accommodate the nav bar */
+  text-shadow: 2px 2px 0px #6b2bff, 4px 4px 0px #ff00dd, 6px 6px 0px #2f00ff;
+  margin-top: 100px;
+  background: #000000;
 }
 
-/* home Section */
-#home h1 {
+/* Section Styles */
+#home h1,
+#about h1,
+#education h1,
+#specializations h1,
+#certificates h1,
+#contact h1 {
   text-align: center;
-  color: #7657FF;
+  color: #7657ff;
   text-decoration: underline;
   padding: 10px;
   font-size: 2.5rem;
 }
 
-#home p {
-  text-align: center;
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
-#home img {
+#home img,
+#about img,
+#education .first-education-image,
+#education .second-education-image,
+#contact img {
   max-width: 90%;
   width: 80%;
   height: auto;
@@ -197,38 +195,9 @@ nav a {
   padding: 2px;
 }
 
-/* About Section */
-#about h1 {
-  text-align: center;
-  color: #7657ff;
-  text-decoration: underline;
-  padding: 10px;
-  font-size: 2.5rem;
-}
-
-#about p {
-  text-align: center;
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
 #about img {
-  max-width: 90%;
   width: 25%;
-  height: auto;
-  margin: 10px auto;
   display: inline-block;
-  padding: 2px;
-}
-
-/* Education Section */
-#education h1 {
-  text-align: center;
-  color: #7657ff;
-  text-decoration: underline;
-  padding: 10px;
-  font-size: 2.5rem;
 }
 
 #education .education-text {
@@ -244,7 +213,6 @@ nav a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  color: #ffffff;
 }
 
 #education a {
@@ -253,63 +221,10 @@ nav a {
   color: #ff615c;
 }
 
-#education .first-education-image {
-  max-width: 90%;
-  width: 90%;
-  height: auto;
-  margin: 10px auto;
-  display: block;
-  padding: 2px;
-}
-
-#education .second-education-image {
-  max-width: 90%;
-  width: 90%;
-  height: auto;
-  margin: 10px auto;
-  display: block;
-  padding: 10px;
-}
-
-/* Specializations */
-#specializations h1 {
-  text-align: center;
-  color: #7657FF;
-  text-decoration: underline;
-  padding: 10px;
-  font-size: 2.5rem;
-}
-
-#specializations h2 {
-  text-align: center;
-  color: #ff00dd;
-  text-decoration: none;
-  padding: 10px;
-}
-
-#specializations h3 {
-  text-align: center;
-  color: #ff00dd;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.specialization-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Certificates */
-#certificates h1 {
-  text-align: center;
-  color: #7657ff;
-  text-decoration: underline;
-  padding: 10px;
-  font-size: 2.5rem;
-}
-
-#certificates h2 {
+#specializations h2,
+#specializations h3,
+#certificates h2,
+#certificates h3 {
   text-align: center;
   color: #ff00dd;
   text-decoration: none;
@@ -317,10 +232,14 @@ nav a {
 }
 
 #certificates h3 {
-  text-align: center;
-  color: #ff00dd;
   text-decoration: underline;
-  padding: 10px;
+}
+
+.specialization-grid,
+.certificate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .certificate-thumbnail {
@@ -333,12 +252,6 @@ nav a {
   text-align: center;
 }
 
-.certificate-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .certificate-thumbnail img {
   width: 100%;
   height: auto;
@@ -349,35 +262,11 @@ nav a {
   color: black;
 }
 
-/* Contact Section */
-#contact h1 {
-  text-align: center;
-  color: #7657ff;
-  text-decoration: underline;
-  padding: 10px;
-  font-size: 2.5rem;
-}
-
-#contact p {
-  text-align: center;
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
 #contact a {
   color: #ff615c;
   text-decoration: underline;
   font-family: "Niconne", sans-serif;
   font-size: 1.2rem;
-}
-
-#contact img {
-  max-width: 90%;
-  width: 80%;
-  height: auto;
-  margin: 10px auto;
-  display: block;
 }
 
 /* Footer */
@@ -392,6 +281,7 @@ nav a {
   z-index: 100;
 }
 
+/* Lightbox */
 .glightbox-clean .gslide-image {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -403,8 +293,8 @@ nav a {
 
 /* Tablet Media Queries */
 @media (min-width: 481px) and (max-width: 768px) {
-  section h1.animate__animated {
-    font-size: 3rem; /* Increased for tablet view */
+  h1.animate__animated {
+    font-size: 3rem;
   }
 
   #home h1,
@@ -424,7 +314,6 @@ nav a {
 
   #about img {
     width: 30%;
-    margin: 10px auto;
   }
 
   #home img {
@@ -444,8 +333,8 @@ nav a {
 
 /* Desktop Media Queries */
 @media (min-width: 769px) {
-  section h1.animate__animated {
-    font-size: 3.5rem; /* Increased for desktop view */
+  h1.animate__animated {
+    font-size: 3.5rem;
   }
 
   #home h1,
@@ -505,14 +394,7 @@ nav a {
 
   .hero {
     font-size: 6rem;
-    text-align: center;
-    height: auto;
     padding: 20px;
-    color: #ffffff;
-    background: #000000;
-    font-family: "Niconne", sans-serif;
-    font-weight: 700;
-    text-shadow: 2px 2px 0px #6b2bff, 4px 4px 0px #ff00dd, 6px 6px 0px #2f00ff;
     margin-top: 80px;
   }
 }

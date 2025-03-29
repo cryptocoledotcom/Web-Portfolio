@@ -3,15 +3,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Check if we're on the login page
     if (window.location.pathname.endsWith('login.html')) {
+        const loginForm = document.getElementById('loginForm');
+        const messageDiv = document.getElementById('message');
+        const loginFormContainer = document.getElementById('login-form-container');
+        const loginSuccessContainer = document.getElementById('login-success-container');
+
         // Check if already logged in (using sessionStorage)
         if (sessionStorage.getItem('isLoggedIn') === 'true') {
             // show login successful content
-            document.getElementById('login-form-container').style.display = 'none';
-            document.getElementById('login-success-container').style.display = 'block';
+            loginFormContainer.style.display = 'none';
+            loginSuccessContainer.style.display = 'block';
         }
-
-        const loginForm = document.getElementById('loginForm');
-        const messageDiv = document.getElementById('message');
 
         loginForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -27,26 +29,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Store login status in sessionStorage
                 sessionStorage.setItem('isLoggedIn', 'true');
                 //show login successful content
-                document.getElementById('login-form-container').style.display = 'none';
-                document.getElementById('login-success-container').style.display = 'block';
-
+                loginFormContainer.style.display = 'none';
+                loginSuccessContainer.style.display = 'block';
+                // Clear form fields
+                usernameInput.value = '';
+                passwordInput.value = '';
             } else {
                 messageDiv.textContent = 'Invalid username or password.';
                 messageDiv.style.color = 'red';
+                // Clear form fields
                 usernameInput.value = '';
                 passwordInput.value = '';
             }
         });
-          // Clear sessionStorage when navigating away from login.html
+        // Clear sessionStorage when navigating away from login.html
         window.addEventListener('beforeunload', function (event) {
-        if (window.location.pathname.endsWith('login.html')) {
-            sessionStorage.removeItem('isLoggedIn');
-        }
-    });
+            if (window.location.pathname.endsWith('login.html')) {
+                sessionStorage.removeItem('isLoggedIn');
+            }
+        });
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const animatedElements = document.querySelectorAll('.animate__animated');
 
     const observer = new IntersectionObserver((entries, observer) => {

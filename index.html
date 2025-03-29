@@ -1,201 +1,205 @@
 <!DOCTYPE html>
-<!--language-->
 <html lang="en">
 
-    <!--head-->
 <head>
-    <!--Meta Tags-->
-    <meta charset="UTF-8">
-    <!--IE Compatability-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!---viewport-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--title-->
-    <title>My Portfolio</title>
-    <!--css stylesheet-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--favicon-->
-    <link rel="icon" href="images/Cole_Favicon.png" type="image/x-icon">
-    <!-- Lightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <!--Animate CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!--javascript-->
-    <script src="js/script.js"></script>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/Cole_Favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-      <!-- Skip to Main Content Link -->
-      <a href="#main-content" class="skip-link">Skip to Main Content</a>
-        <div class="logo-container">
-            <a href="#"><img src="images/cole.png" alt="My Logo"></a>
+  <!-- Navigation -->
+  <nav>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <div class="logo-container">
+      <a href="#"><img src="images/cole.png" alt="My Logo"></a>
+    </div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#specializations">Specializations</a></li>
+      <li><a href="#certificates">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!--Hero Text-->
+  <header>
+    <h1 class="hero">WELCOME</h1>
+  </header>
+
+  <!-- Main Content Start -->
+  <main id="main-content">
+    <!--Home Section-->
+    <section id="home">
+      <h1 class="animate__animated" data-animation="animate__backInLeft">HOME</h1>
+      <p class="intro-paragraph">Welcome to my portfolio. Here you will find information about me and my work
+        including continued education certificates.</p>
+      <p class="intro-paragraph">You will also find some pictures as well as information regarding my projects and
+        education.</p>
+      <p class="intro-paragraph">I plan to use this site to showcase my abilities and creativeness</p>
+      <img src="images/PC_Work.png"
+        alt="Cartoon Cole with a crazy look on his face, wearing a Michigan hoodie, while he is coding.">
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+      <h1 class="animate__animated" data-animation="animate__backInRight">ABOUT</h1>
+      <p>My name is Cole</p>
+      <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+      <p>I develop a mobile first environment with responsiveness & accessibility always in mind</p>
+      <img src="images/HTML5_AI2.png" alt="HTML5 Logo">
+      <img src="images/CSS3_AI.png" alt="CSS3 Logo">
+      <img src="images/Javascript_AI.png" alt="JavaScript Logo">
+    </section>
+
+    <!--Education Section-->
+    <section id="education">
+      <h1 class="animate__animated" data-animation="animate__backInLeft">EDUCATION</h1>
+      <img src="images/Programming_Code-Avatar.png"
+        alt="Avatar with a crazy look on his face, wearing a Michigan hoodie, while he is coding."
+        class="first-education-image">
+      <div class="education-text">
+        <p>I obtained my Diploma in 2001 from
+          <span class="logo-container">
+            <img src="images/BL_Logo.png" alt="Beaver Local Logo">
+          </span>
+          <a
+            href="https://beaverlocal.touchpros.com/Detail.aspx?type=Teams&searchBy=Year&searchQuery=10978&Id=19485&tabid=572">Beaver
+            Local High School </a>
+        </p>
+
+        <p>46090 Bell School Rd</p>
+        <p>East Liverpool, OH 43920</p>
+        <p>(330) 386-8700</p>
+      </div>
+      <img src="images/Beaver_Local_Schools_K-12.jpg" alt="Beaver Local Schools K-12" class="second-education-image">
+    </section>
+
+    <section id="specializations">
+      <h1 class="animate__animated" data-animation="animate__backInRight">SPECIALIZATIONS</h1>
+      <h2>The University of Michigan</h2>
+      <h2>Web Design for Everybody: Basics of Web Development & Coding</h2>
+      <img src="images/UofM_Blue_Logo.png" alt="University of Michigan Logo">
+
+
+      <div class="specialization-grid">
+        <div class="certificate-thumbnail">
+          <a href="images/Web_Design_for_Everybody_Basics_of_Web_Development_&_Coding_Thumbnail.png"
+            data-gallery="specializations-gallery" class="glightbox">
+            <img src="images/Web_Design_for_Everybody_Basics_of_Web_Development_&_Coding_Thumbnail.png"
+              alt="Web Design for Everybody Specialization Certificate">
+            <p>Web Design for Everybody: Basics of Web Development & Coding Specialization</p>
+          </a>
         </div>
-        
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#specializations">Specializations</a></li>
-            <li><a href="#certificates">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
-    
-    <!--Hero Text-->
-    <header>
-        <h1 class="hero">WELCOME</h1>
-    </header>
+      </div>
 
-    <!-- Main Content Start -->
-    <main id="main-content">
-        <!--Home Section-->
-        <section id="home">
-            <h1 class="animate__animated" data-animation="animate__backInLeft" style="color: #5b14ff;">HOME</h1>
-            <p class="intro-paragraph">Welcome to my portfolio. Here you will find information about me and my work including continued education certificates.</p>
-            <p class="intro-paragraph">You will also find some pictures as well as information regarding my projects and education.</p>
-            <p class="intro-paragraph">I plan to use this site to showcase my abilities and creativeness</p>
-            <img src="images/PC_Work.png" alt="Cartoon Cole with a crazy look on his face, wearing a Michigan hoodie, while he is coding.">
-        </section>
+      <h2>Google</h2>
+      <h2>Google IT Support Professional</h2>
+      <img src="images/Google_Logo.jpg" alt="Google Logo">
 
-        <!--About Section-->
-        <section id="about">
-            <h1 class="animate__animated" data-animation="animate__backInRight" style="color: #5b14ff;">ABOUT</h1>
-            <p>My name is Cole</p>
-            <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
-            <p>I develop a mobile first environment with responsiveness & accessibility always in mind</p>
-            <img src="images/HTML5_AI2.png" alt="HTML5 Logo">
-            <img src="images/CSS3_AI.png" alt="CSS3 Logo">
-            <img src="images/Javascript_AI.png" alt="JavaScript Logo">
-        </section>
+      <h3>Coming Soon</h3>
+    </section>
 
-        <!--Education Section-->
-        <section id="education">
-            <h1 class="animate__animated" data-animation="animate__backInLeft" style="color: #5b14ff;">EDUCATION</h1>
-            <img src="images/Programming_Code-Avatar.png" alt="Avatar with a crazy look on his face, wearing a Michigan hoodie, while he is coding." class="first-education-image">                
-                <div class="education-text">
-                    <p>I obtained my Diploma in 2001 from 
-                        <span class="logo-container">
-                            <img src="images/BL_Logo.png" alt="Beaver Local Logo">
-                        </span>
-                        <a href="https://beaverlocal.touchpros.com/Detail.aspx?type=Teams&searchBy=Year&searchQuery=10978&Id=19485&tabid=572">Beaver Local High School </a>
-                    </p>
-            
-                <p>46090 Bell School Rd</p>
-                <p>East Liverpool, OH 43920</p>
-                <p>(330) 386-8700</p>
-                </div>
-            <img src="images/Beaver_Local_Schools_K-12.jpg" alt="Beaver Local Schools K-12" class="second-education-image">
-        </section>
-
-        <section id="specializations">
-            <h1 class="animate__animated" data-animation="animate__backInRight" style="color: #5b14ff;">SPECIALIZATIONS</h1>
-            <h2>The University of Michigan</h2>
-            <h2>Web Design for Everybody: Basics of Web Development & Coding</h2>
-            <img src="images/UofM_Blue_Logo.png" alt="University of Michigan Logo">
-            
-
-            <div class="specialization-grid">
-                <div class="certificate-thumbnail">
-                    <a href="images/Web_Design_for_Everybody_Basics_of_Web_Development_&_Coding_Thumbnail.png" data-gallery="specializations-gallery" class="glightbox">
-                        <img src="images/Web_Design_for_Everybody_Basics_of_Web_Development_&_Coding_Thumbnail.png" alt="Web Design for Everybody Specialization Certificate">
-                        <p>Web Design for Everybody: Basics of Web Development & Coding Specialization</p>
-                    </a>
-                </div>
-            </div>
-            
-            <h2>Google</h2>
-            <h2>Google IT Support Professional</h2>
-            <img src="images/Google_Logo.jpg" alt="Google Logo">
-            
-            <h3>Coming Soon</h3>
-        </section>
-
-            <!--
-            <div class="certificate-grid">
-                <div class="certificate-thumbnail">
-                    <a href="images/Google_IT_Support_Professional_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Google_IT_Support_Professional_Thumbnail.png" alt="Google IT Support Professional Specialization Certificate"-->
-           
-        <!--Coursera Certificate PDF Roundrip Lightbox-->
-        <section id="certificates">
-            <h1 class="animate__animated" data-animation="animate__backInLeft" style="color: #5b14ff;">CERTIFICATIONS</h1>
-            <h2>The University of Michigan</h2>
-            <h2>Web Design for Everybody: Basics of Web Development & Coding Certificates</h2>
-            <img src="images/UofM_Blue_Logo.png" alt="University of Michigan Logo">
-            
+    <!--Coursera Certificate PDF Roundrip Lightbox-->
+    <section id="certificates">
+      <h1 class="animate__animated" data-animation="animate__backInLeft">CERTIFICATIONS</h1>
+      <h2>The University of Michigan</h2>
+      <h2>Web Design for Everybody: Basics of Web Development & Coding Certificates</h2>
+      <img src="images/UofM_Blue_Logo.png" alt="University of Michigan Logo">
 
 
-            <div class="certificate-grid">
-                <div class="certificate-thumbnail">  
-                    <a href="images/Introduction_to_HTML5_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Introduction_to_HTML5_Thumbnail.png" alt="Introduction to HTML5 Certificate">
-                        <p>Introduction to HTML5</p>
-                    </a>
-                </div>
-                <div class="certificate-thumbnail">
-                    <a href="images/Introduction_to_css3_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Introduction_to_css3_Thumbnail.png" alt="Introduction to CSS3 Certificate">
-                        <p>Introduction to CSS3</p>
-                    </a>
-                </div>
-                <div class="certificate-thumbnail">
-                    <a href="images/Interactivity_with_Javascript_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Interactivity_with_Javascript_Thumbnail.png" alt="Interactivity with JavaScript Certificate">
-                        <p>Interactivity with JavaScript</p>
-                    </a>
-                </div>
-                <div class="certificate-thumbnail">
-                    <a href="images/Advanced_Styling_with_Responsive_Design_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Advanced_Styling_with_Responsive_Design_Thumbnail.png" alt="Advanced Styling with Responsive Design Certificate">
-                        <p>Styling & Responsive Design</p>
-                    </a>
-                </div>
-                <div class="certificate-thumbnail">   
-                    <a href="images/Web_Design_for_Everybody_Capstone_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Web_Design_for_Everybody_Capstone_Thumbnail.png" alt="Web Design for Everybody Certificate">
-                        <p>Web Design Capstone</p>
-                    </a>
-                </div>
-            </div>
 
-            <h2>Google</h2>
-            <h2>Google IT Support Professional Certificates</h2>
-            <img src="images/Google_Logo.jpg" alt="Google Logo">
-            
-            
-            
-            <div class="certificate-grid">
-                
-                <div class="certificate-thumbnail">
-                    <a href="images/Operating_Systems_and_You_Becoming_a_Power_User_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Operating_Systems_and_You_Becoming_a_Power_User_Thumbnail.png" alt="Operating Systems and You Certificate">
-                        <p>Operating Systems & You: Becoming a Power User</p>
-                    </a>
-                </div>
-                <div class="certificate-thumbnail">
-                    <a href="images/System_Administration_and_IT_Infrastructure_Services_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/System_Administration_and_IT_Infrastructure_Services_Thumbnail.png" alt="System Administration and IT Infrastructure Services Certificate">
-                        <p>System Administration & IT Infrastructure Services</p>
-                    </a>
-                </div>
-                <div class="certificate-thumbnail">
-                    <a href="images/Technical_Support_Fundamentals_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/Technical_Support_Fundamentals_Thumbnail.png" alt="Technical Support Fundamentals Certificate">
-                        <p>Technical Support Fundamentals</p>
-                    </a>
-                </div>
-                <div class="certificate-thumbnail">
-                    <a href="images/The_Bits_and_Bytes_of_Computer_Networking_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
-                        <img src="images/The_Bits_and_Bytes_of_Computer_Networking_Thumbnail.png" alt="The Bits and Bytes of Computer Networking Certificate">
-                        <p>The Bits & Bytes of Computer Networking</p>
-                    </a>
-                </div>
-                <!--
+      <div class="certificate-grid">
+        <div class="certificate-thumbnail">
+          <a href="images/Introduction_to_HTML5_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
+            <img src="images/Introduction_to_HTML5_Thumbnail.png" alt="Introduction to HTML5 Certificate">
+            <p>Introduction to HTML5</p>
+          </a>
+        </div>
+        <div class="certificate-thumbnail">
+          <a href="images/Introduction_to_css3_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
+            <img src="images/Introduction_to_css3_Thumbnail.png" alt="Introduction to CSS3 Certificate">
+            <p>Introduction to CSS3</p>
+          </a>
+        </div>
+        <div class="certificate-thumbnail">
+          <a href="images/Interactivity_with_Javascript_Thumbnail.png" data-gallery="certificates-gallery"
+            class="glightbox">
+            <img src="images/Interactivity_with_Javascript_Thumbnail.png"
+              alt="Interactivity with JavaScript Certificate">
+            <p>Interactivity with JavaScript</p>
+          </a>
+        </div>
+        <div class="certificate-thumbnail">
+          <a href="images/Advanced_Styling_with_Responsive_Design_Thumbnail.png" data-gallery="certificates-gallery"
+            class="glightbox">
+            <img src="images/Advanced_Styling_with_Responsive_Design_Thumbnail.png"
+              alt="Advanced Styling with Responsive Design Certificate">
+            <p>Styling & Responsive Design</p>
+          </a>
+        </div>
+        <div class="certificate-thumbnail">
+          <a href="images/Web_Design_for_Everybody_Capstone_Thumbnail.png" data-gallery="certificates-gallery"
+            class="glightbox">
+            <img src="images/Web_Design_for_Everybody_Capstone_Thumbnail.png"
+              alt="Web Design for Everybody Certificate">
+            <p>Web Design Capstone</p>
+          </a>
+        </div>
+      </div>
+
+      <h2>Google</h2>
+      <h2>Google IT Support Professional Certificates</h2>
+      <img src="images/Google_Logo.jpg" alt="Google Logo">
+
+
+
+      <div class="certificate-grid">
+
+        <div class="certificate-thumbnail">
+          <a href="images/Operating_Systems_and_You_Becoming_a_Power_User_Thumbnail.png"
+            data-gallery="certificates-gallery" class="glightbox">
+            <img src="images/Operating_Systems_and_You_Becoming_a_Power_User_Thumbnail.png"
+              alt="Operating Systems and You Certificate">
+            <p>Operating Systems & You: Becoming a Power User</p>
+          </a>
+        </div>
+        <div class="certificate-thumbnail">
+          <a href="images/System_Administration_and_IT_Infrastructure_Services_Thumbnail.png"
+            data-gallery="certificates-gallery" class="glightbox">
+            <img src="images/System_Administration_and_IT_Infrastructure_Services_Thumbnail.png"
+              alt="System Administration and IT Infrastructure Services Certificate">
+            <p>System Administration & IT Infrastructure Services</p>
+          </a>
+        </div>
+        <div class="certificate-thumbnail">
+          <a href="images/Technical_Support_Fundamentals_Thumbnail.png" data-gallery="certificates-gallery"
+            class="glightbox">
+            <img src="images/Technical_Support_Fundamentals_Thumbnail.png"
+              alt="Technical Support Fundamentals Certificate">
+            <p>Technical Support Fundamentals</p>
+          </a>
+        </div>
+        <div class="certificate-thumbnail">
+          <a href="images/The_Bits_and_Bytes_of_Computer_Networking_Thumbnail.png"
+            data-gallery="certificates-gallery" class="glightbox">
+            <img src="images/The_Bits_and_Bytes_of_Computer_Networking_Thumbnail.png"
+              alt="The Bits and Bytes of Computer Networking Certificate">
+            <p>The Bits & Bytes of Computer Networking</p>
+          </a>
+        </div>
+        <!--
                 <div class="certificate-thumbnail">
                     <a href="images/IT_Security_Thumbnail.png" data-gallery="certificates-gallery" class="glightbox">
                         <img src="images/IT_Security_Thumbnail.png" alt="IT Security Certificate">
@@ -203,39 +207,40 @@
                     </a>
                 </div>
                 -->
-                
-            </div>
-            
-        </section>
 
-        <!--Contact Section-->
-        <section id="contact">
-            <h1 class="animate__animated" data-animation="animate__backInRight" style="color: #5b14ff;">CONTACT</h1>
-            <p>Please feel free to reach out:</p>
-            <p>Email:
-                <a href="mailto:colebowersock@gmail.com">colebowersock@gmail.com</a>
-            </p>
-            <img src="images/cole.png" alt="Avatar of Cole smiling wryly wearing a Michigan hoodie, while he is coding.">
-        </section>
-    </main>
-    <!-- Main Content End -->
+      </div>
 
-    <!--Footer-->
-        <footer id="footer">
-            <p>&copy; 2025 Cole's Portfolio. All rights reserved.</p>
-        </footer>
+    </section>
 
-     <!-- Lightbox JS -->
-     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-     <script>
+    <!--Contact Section-->
+    <section id="contact">
+      <h1 class="animate__animated" data-animation="animate__backInRight">CONTACT</h1>
+      <p>Please feel free to reach out:</p>
+      <p>Email:
+        <a href="mailto:colebowersock@gmail.com">colebowersock@gmail.com</a>
+      </p>
+      <img src="images/cole.png"
+        alt="Avatar of Cole smiling wryly wearing a Michigan hoodie, while he is coding.">
+    </section>
+  </main>
+  <!-- Main Content End -->
 
-         // Initialize GLightbox
-         const lightbox = GLightbox({
-             touchNavigation: true,
-             loop: true,
-             autoplayVideos: true,
-         });
-     </script>
+  <!--Footer-->
+  <footer id="footer">
+    <p>&copy; 2025 Cole's Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox JS -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Initialize GLightbox
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true,
+    });
+  </script>
 
 </body>
+
 </html>

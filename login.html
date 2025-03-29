@@ -1,88 +1,77 @@
 <!DOCTYPE html>
-<!--language-->
 <html lang="en">
 
-<!--head-->
 <head>
-    <!--Meta Tags-->
-    <meta charset="UTF-8">
-    <!--IE Compatability-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!---viewport-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--title-->
-    <title>Login</title>
-    <!--css stylesheet-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--favicon-->
-    <link rel="icon" href="images/Cole_Favicon.png" type="image/x-icon">
-    <!-- Lightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <!--Animate CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/Cole_Favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body class="login-page">
 
-    <!-- Navigation -->
-    <nav>
-        <!-- Skip to Main Content Link -->
-        <a href="#main-content" class="skip-link">Skip to Main Content</a>
-        <div class="logo-container">
-            <a href="index.html"><img src="images/cole.png" alt="My Logo"></a>
-        </div>
+  <!-- Navigation -->
+  <nav>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <div class="logo-container">
+      <a href="index.html"><img src="images/cole.png" alt="My Logo"></a>
+    </div>
 
-        <ul>
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#education">Education</a></li>
-            <li><a href="index.html#specializations">Specializations</a></li>
-            <li><a href="index.html#certificates">Certifications</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#specializations">Specializations</a></li>
+      <li><a href="index.html#certificates">Certifications</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
 
-    <!--Hero Text-->
-    <header>
-        <h1 class="hero">Welcome to the Login</h1>
-    </header>
-    <main id="main-content">
+  <!--Hero Text-->
+  <header>
+    <h1 class="hero">Welcome to the Login</h1>
+  </header>
+  <main id="main-content">
     <!-- Login Form (Initially Shown) -->
-    <div id="login-form-container" >
-        <h1>Login</h1>
-        <form id="loginForm">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
-            <button type="submit">Login</button>
-        </form>
-        <div id="message"></div>
+    <div id="login-form-container">
+      <h1>Login</h1>
+      <form id="loginForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit">Login</button>
+      </form>
+      <div id="message"></div>
     </div>
 
     <!-- Login Form (Initially Hidden) -->
     <div id="login-success-container" style="display: none;">
-        <h1>Login Success</h1>
-        <p>You have logged in successfully. Here you can add additional content you want only for logged in users!</p>
+      <h1>Login Success</h1>
+      <p>You have logged in successfully. Here you can add additional content you want only for logged in users!</p>
     </div>
-</main>
-    <script src="js/script.js"></script>
-    <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2025 Cole's Portfolio. All rights reserved.</p>
-    </footer>
+  </main>
+  <script src="js/script.js"></script>
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Cole's Portfolio. All rights reserved.</p>
+  </footer>
 
-    <!-- Lightbox JS -->
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script>
-        // Initialize GLightbox
-        const lightbox = GLightbox({
-            touchNavigation: true,
-            loop: true,
-            autoplayVideos: true,
-        });
-    </script>
+  <!-- Lightbox JS -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Initialize GLightbox
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true,
+    });
+  </script>
 
 </body>
 
