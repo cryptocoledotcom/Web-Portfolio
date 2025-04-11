@@ -254,7 +254,8 @@
      padding: 10px;
    }
    
-   #certificates h3 {
+   #certificates h3,
+   #specializations h3 {
      text-decoration: underline;
    }
    
